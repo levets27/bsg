@@ -16,3 +16,8 @@
 .App-intro {
   font-size: large;
 }
+
+.App-p {
+  background: var(--color-primary);
+  color: var(--color-white);
+}

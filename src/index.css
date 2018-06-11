@@ -3,3 +3,22 @@ body {
   padding: 0;
   font-family: sans-serif;
 }
+:root {
+  --color-primary: blue;
+  --color-secondary: red;
+  --color-black: black;
+  --color-white: white;
+
+  --bp-30: 400px;
+  --bp-50: 600px;
+  --bp-100: 800px;
+  --bp-150: 1000px;
+  --bp-200: 1600px;
+
+  --spacing-25: .25rem;
+  --spacing-50: .5rem;
+  --spacing-100: 1rem;
+  --spacing-150: 1.5rem;
+  --spacing-200: 2rem;
+  --spacing-300: 3rem;
+}

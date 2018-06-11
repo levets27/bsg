@@ -1,23 +1,20 @@
+// Framework Imports
 import React from "react";
-import { colors, spacing } from "../global/style_vars.js";
+// Styles
+import "./styles/header.scss";
+// Assets
 import logo from "../assets/logo/BSG_bar_white.svg";
-import styled from "styled-components";
+// Components
+import NavBar from "./navBar";
 
-const HeaderEl = styled.header`
-  padding: ${spacing.lg};
-  background: ${colors.black};
-  color: ${colors.white};
-  text-align: center;
-`;
-const Logo = styled.img`
-  height: 80px;
-`;
 const Header = props => {
   return (
-    <HeaderEl>
-      <Logo src={logo} alt="logo" />
-      <h1 className="App-title">{props.titleText}</h1>
-    </HeaderEl>
+    <header className="Header">
+      <div className="LogoWrap">
+        <img className="Logo" src={logo} alt="Bomb Shelter Games" />
+      </div>
+      <NavBar />
+    </header>
   );
 };
 

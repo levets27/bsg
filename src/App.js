@@ -1,21 +1,14 @@
 import React, { Component, Fragment } from "react";
-import styled from "styled-components";
-import { colors, spacing } from "./global/style_vars.js";
+import "./app.css";
 
-import Header from "./layout/header.js";
-
-const Paragraph = styled.p`
-  background: ${colors.primary};
-  color: ${colors.white};
-  padding: ${spacing.md} ${spacing.xl};
-`;
+import Header from "./layout/header";
 
 class App extends Component {
   render() {
     return (
       <Fragment>
         <Header titleText="Welcome to React" />
-        <Paragraph>This is some new text</Paragraph>
+        <p className="App-p">This is some new text</p>
       </Fragment>
     );
   }
