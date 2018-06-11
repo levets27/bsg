@@ -1,29 +1,24 @@
-import React, { Component } from "react";
-import logo from "./logo.svg";
-import "./App.css";
-import styled from "react-app-rewire-styled-components";
-import { colors } from "./global/style_vars.js";
+import React, { Component, Fragment } from "react";
+import styled from "styled-components";
+import { colors, spacing } from "./global/style_vars.js";
+
+import Header from "./layout/header.js";
 
 const Paragraph = styled.p`
   background: ${colors.primary};
-  text: ${colors.white};
+  color: ${colors.white};
+  padding: ${spacing.md} ${spacing.xl};
 `;
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h1 className="App-title">Welcome to React</h1>
-        </header>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
+      <Fragment>
+        <Header titleText="Welcome to React" />
         <Paragraph>This is some new text</Paragraph>
-      </div>
+      </Fragment>
     );
   }
 }
 
-export default styled(App);
+export default App;
