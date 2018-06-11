@@ -15,6 +15,7 @@
     "eject": "react-app-rewired eject"
   },
   "devDependencies": {
+    "babel-plugin-styled-components": "^1.5.1",
     "react-app-rewired": "^1.5.2"
   }
 }
