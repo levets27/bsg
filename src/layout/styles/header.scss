@@ -1,23 +1,20 @@
-.Header {
-  padding: var(--spacing-100);
-  background: var(--color-black);
-  color: var(--color-white);
-  display: flex;
-}
-.LogoWrap {
-  width: 90%;
-  margin: auto;
-}
-.Logo {
-  width: 100%;
-  display: block;
-}
+// Must include global vars in all files
+@import 'global/all';
 
-/* Styles for smaller screens */
-@media screen and (min-width: 800px) {
-  .LogoWrap {
-    width: 60%;
-    max-width: 600px;
-    margin: 0;
+// Component styles below
+.Header {
+  padding: $spacing--1000;
+  background: $color--black;
+  color: $color--white;
+  display: flex;
+  &-logoWrap {
+    width: 90%;
+    margin: auto;
+    // Styles for smaller screens
+    @media screen and (min-width: $bp--500) {
+      width: 60%;
+      max-width: 600px;
+      margin: 0;
+    }
   }
 }

@@ -1,17 +1,16 @@
 // Framework Imports
 import React from "react";
 // Styles
-import "./styles/header.scss";
-// Assets
-import logo from "../assets/logo/BSG_bar_white.svg";
+import "./styles/header.css";
 // Components
+import Logo from "../global/components/logo";
 import NavBar from "./navBar";
 
 const Header = props => {
   return (
     <header className="Header">
-      <div className="LogoWrap">
-        <img className="Logo" src={logo} alt="Bomb Shelter Games" />
+      <div className="Header-logoWrap">
+        <Logo />
       </div>
       <NavBar />
     </header>

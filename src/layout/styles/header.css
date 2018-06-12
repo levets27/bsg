@@ -1,0 +1,13 @@
+.Header {
+  padding: 1rem;
+  background: black;
+  color: white;
+  display: flex; }
+  .Header-logoWrap {
+    width: 90%;
+    margin: auto; }
+    @media screen and (min-width: 600px) {
+      .Header-logoWrap {
+        width: 60%;
+        max-width: 600px;
+        margin: 0; } }
