@@ -1,0 +1,19 @@
+.Button {
+  border: 1px solid;
+  border-radius: 0.5rem;
+  transition: background-color .3s, border-color .3s;
+  display: inline-block; }
+  .Button-color--primary {
+    background-color: blue;
+    border-color: blue;
+    color: white; }
+  .Button-color--ghost {
+    background-color: transparent;
+    border-color: white;
+    color: white; }
+  .Button-size--small {
+    padding: 0.5rem 1rem; }
+  .Button-size--medium {
+    padding: 0.5rem 1rem; }
+  .Button-size--large {
+    padding: 1rem 1.5rem; }

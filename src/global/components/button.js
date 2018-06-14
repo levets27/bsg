@@ -4,12 +4,23 @@ import React from "react";
 import "./styles/button.css";
 
 const Button = props => {
-  const ButtonEl = this.props.href ? "a" : "button";
+  const ButtonEl = props.href ? "a" : "button";
   return (
-    <ButtonEl onClick={this.props.onClick} href={this.props.href}>
-      {this.props.children}
+    <ButtonEl
+      onClick={props.onClick}
+      href={props.href}
+      className={`Button Button-size--${props.size} Button-color--${
+        props.type
+      }`}
+    >
+      {props.children}
     </ButtonEl>
   );
+};
+
+Button.defaultProps = {
+  size: "medium",
+  type: "primary"
 };
 
 export default Button;

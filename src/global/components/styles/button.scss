@@ -1,0 +1,37 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.Button {
+  border: 1px solid;
+  border-radius: $border-radius;
+  transition: background-color .3s, border-color .3s;
+  display: inline-block; // In case this is an <a> instead of a <button>
+  // Color variations
+  &-color {
+    &--primary {
+      background-color: $color--primary;
+      border-color: $color--primary;
+      color: $color--white;
+    }
+    &--ghost {
+      background-color: transparent;
+      border-color: $color--white;
+      color: $color--white;
+    }
+  }
+  // Size variations
+  &-size {
+    &--small {
+      padding: $spacing--500 $spacing--1000;
+      // todo font size
+    }
+    &--medium {
+      padding: $spacing--500 $spacing--1000;
+    }
+    &--large {
+      padding: $spacing--1000 $spacing--1500;
+      // todo font size
+    }
+  }
+}
