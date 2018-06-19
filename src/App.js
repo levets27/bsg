@@ -8,6 +8,7 @@ import Hero from "./global/components/hero";
 import Button from "./global/components/button";
 import Video from "./global/components/video";
 import Footer from "./layout/footer";
+// Images
 import dosHeroImg from "./images/dos-hero.png";
 import dosLogo from "./images/dos-logo-color.png";
 import dosVidPlaceholder from "./images/dos-video-placeholder.png";
