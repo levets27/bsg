@@ -1,7 +1,12 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
+/* $font-size--7000:             3rem; // 48px
+$font-size--6000:             2.25rem; // 36px -- PDP Price Only
+$font-size--5000:             2rem;    // 32px
+$font-size--4000:             1.75rem; // 28px
+$font-size--3000:             1.5rem;  // 24px
+$font-size--2000:             1.25rem; // 20px
+$font-size--1000:             1rem;    // 16px
+$font-size--500:              .813rem; // 13px
+ */
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp,
 small, strike, strong, sub, sup, tt, var, b, u, i, center,
@@ -15,7 +20,6 @@ menu, nav, output, ruby, section, summary, time, mark, audio, video {
   font: inherit;
   vertical-align: baseline; }
 
-/* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
   display: block; }
@@ -38,9 +42,21 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-article, aside, details, figcaption, figure,
-footer, header, hgroup, menu, nav, section {
-  display: block; }
+*,
+*:after,
+*:before {
+  box-sizing: border-box; }
+
+html, body {
+  font-size: 16px;
+  font-family: Arial, Helvetica, sans-serif;
+  background: #01264f; }
+
+img {
+  max-width: 100%; }
+
+button {
+  cursor: pointer; }
 
 h1 {
   font-size: 2em; }

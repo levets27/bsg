@@ -4,34 +4,48 @@
 // Component styles below
 .Button {
   border: 1px solid;
-  border-radius: $border-radius;
   transition: background-color .3s, border-color .3s;
   display: inline-block; // In case this is an <a> instead of a <button>
+  text-decoration: none;
   // Color variations
   &-color {
     &--primary {
       background-color: $color--primary;
       border-color: $color--primary;
       color: $color--white;
+      &:hover {
+        background-color: darken($color--primary, $tint);
+        border-color: darken($color--primary, $tint);
+      }
     }
     &--ghost {
       background-color: transparent;
       border-color: $color--white;
       color: $color--white;
+      &:hover {
+        background-color: $color--primary;
+        border-color: $color--primary;
+      }
     }
   }
   // Size variations
   &-size {
     &--small {
       padding: $spacing--500 $spacing--1000;
-      // todo font size
+      font-size: $font-size--500;
+      border-radius: $radius--1000;
     }
     &--medium {
       padding: $spacing--500 $spacing--1000;
+      border-radius: $radius--2000;
     }
     &--large {
-      padding: $spacing--1000 $spacing--1500;
-      // todo font size
+      padding: $spacing--500 $spacing--1000;
+      border-radius: $radius--2000;
+      @media screen and (min-width: $bp--1000) {
+        font-size: $font-size--2000;
+        padding: $spacing--1000 $spacing--1500;
+      }
     }
   }
 }

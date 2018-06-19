@@ -1,0 +1,11 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.MainContent {
+  position: absolute;
+  top: calc(100vh - 70px);
+  width: 100vw;
+  max-width: 100%;
+  background: $color--background;
+}

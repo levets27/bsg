@@ -2,7 +2,7 @@
 import React from "react";
 
 const NavBar = props => {
-  return <nav>Nav</nav>;
+  return <nav className="NavBar">Nav</nav>;
 };
 
 export default NavBar;

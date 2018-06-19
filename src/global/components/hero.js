@@ -1,27 +1,22 @@
 // Framework Imports
-import React from "react";
-import PropTypes from "prop-types";
+import React, { Fragment } from "react";
 // Styles
 import "./styles/hero.css";
 
 const Hero = props => {
   return (
-    <div
-      className="Hero"
-      style={{ backgroundImage: "url(" + props.image + ")" }}
-    >
-      {props.children}
-    </div>
+    <Fragment>
+      <div
+        className="Hero"
+        style={{ backgroundImage: "url('" + props.image + "')" }}
+      />
+      {props.children && (
+        <div className="Hero-content">
+          <div className="Hero-content-inner">{props.children}</div>
+        </div>
+      )}
+    </Fragment>
   );
-};
-
-Hero.defaultProps = {
-  image: null
-};
-
-// todo - add .isRequired
-Hero.propTypes = {
-  image: PropTypes.string
 };
 
 export default Hero;

@@ -1,5 +1,36 @@
+/* $font-size--7000:             3rem; // 48px
+$font-size--6000:             2.25rem; // 36px -- PDP Price Only
+$font-size--5000:             2rem;    // 32px
+$font-size--4000:             1.75rem; // 28px
+$font-size--3000:             1.5rem;  // 24px
+$font-size--2000:             1.25rem; // 20px
+$font-size--1000:             1rem;    // 16px
+$font-size--500:              .813rem; // 13px
+ */
 .Hero {
-  width: 100vw;
-  height: 100vh;
   background-size: cover;
-  background-repeat: no-repeat; }
+  background-position: center;
+  background-repeat: no-repeat;
+  position: fixed;
+  top: 0; }
+  .Hero, .Hero-content {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh; }
+  .Hero-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding-bottom: 70px; }
+    .Hero-content-inner {
+      margin: auto;
+      max-width: 90%;
+      text-align: center; }
+      .Hero-content-inner img {
+        display: block;
+        margin-bottom: 1rem; }
+      .Hero-content-inner .Button:first-of-type {
+        margin-right: 0.5rem; }
+      @media screen and (min-width: 800px) {
+        .Hero-content-inner {
+          max-width: 60%; } }

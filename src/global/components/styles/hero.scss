@@ -1,6 +1,38 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
 .Hero {
-  width: 100vw;
-  height: 100vh;
   background-size: cover;
+  background-position: center;
   background-repeat: no-repeat;
+  position: fixed;
+  top: 0;
+  &,
+  &-content {
+    max-width: 100%;
+    width: 100vw;
+    height: 100vh;
+  }
+  &-content {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    padding-bottom: 70px; // Compensate for the nav overlay at the bottom - allows for better vertical centering
+    &-inner {
+      margin: auto;
+      max-width: 90%;
+      text-align: center;
+      img {
+        display: block;
+        margin-bottom: $spacing--1000;
+      }
+      .Button:first-of-type {
+        margin-right: $spacing--500;
+      }
+      @media screen and (min-width: $bp--1000) {
+        max-width: 60%;
+      }
+    }
+  }
 }

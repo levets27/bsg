@@ -1,25 +1,41 @@
 // Framework Imports
-import React, { Component, Fragment } from "react";
+import React, { Fragment } from "react";
 // Component Styles
 import "./app.css";
 // Component Imports
 import Header from "./layout/header";
 import Hero from "./global/components/hero";
 import Button from "./global/components/button";
+import Video from "./global/components/video";
+import Footer from "./layout/footer";
+import dosHeroImg from "./images/dos-hero.png";
+import dosLogo from "./images/dos-logo-color.png";
+import dosVidPlaceholder from "./images/dos-video-placeholder.png";
 
-class App extends Component {
-  render() {
-    return (
-      <Fragment>
-        <Header titleText="Welcome to React" />
-        <Hero image="../assets/hero/dos-hero-main.png">
-          <Button type="primary" href="#trailer">
-            Watch Trailer
-          </Button>
-        </Hero>
-      </Fragment>
-    );
-  }
-}
+const App = () => {
+  return (
+    <Fragment>
+      <Hero image={dosHeroImg}>
+        <img src={dosLogo} alt="Depths of Sanity" />
+        <Button type="ghost" size="large" href="#trailer">
+          Watch Trailer
+        </Button>
+        <Button type="ghost" size="large" href="#demo">
+          Download Demo
+        </Button>
+      </Hero>
+      <main className="MainContent">
+        <Header />
+        <Video
+          id="TAsShJwaruA"
+          placeholderImg={dosVidPlaceholder}
+          title="DoS Trailer"
+          autoplay
+        />
+        <Footer />
+      </main>
+    </Fragment>
+  );
+};
 
 export default App;

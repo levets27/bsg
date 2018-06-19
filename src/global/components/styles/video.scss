@@ -1,0 +1,26 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.Video {
+  margin: $spacing--1500 auto;
+  display: block;
+  width: calc(100% - (#{$spacing--1500 * 2})); // ac
+  max-width: $bp--2000;
+  // Using these 3 properties allows us to maintain aspect ratio, and stretch the content to fit the container
+  padding: 0 0 56.25%; // 16:9 aspect ratio for bottom padding (9 / 16 = 0.5625)
+  position: relative;
+  overflow: hidden;
+  // Remove some default button styling, because we need this to be a clickable element
+  background: 0;
+  border: 0;
+  // Absolutely position the children so they fill the container
+  &-frame,
+  &-placeholder {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+  }
+}

@@ -7,9 +7,7 @@ $font-size--2000:             1.25rem; // 20px
 $font-size--1000:             1rem;    // 16px
 $font-size--500:              .813rem; // 13px
  */
-.MainContent {
-  position: absolute;
-  top: calc(100vh - 70px);
-  width: 100vw;
-  max-width: 100%;
-  background: #01264f; }
+.Footer {
+  background: black;
+  color: white;
+  padding: 1rem; }

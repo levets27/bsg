@@ -3,7 +3,7 @@ import React from "react";
 // Styles
 import "./styles/logo.css";
 // Logo Assets
-import logo from "../../assets/logo/BSG_bar_white.svg";
+import logo from "../../images/logo-bar-white.svg";
 
 const Logo = props => {
   return <img className="Logo" src={logo} alt="Bomb Shelter Games" />;
