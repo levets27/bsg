@@ -8,7 +8,7 @@
   width: calc(100% - (#{$spacing--1500 * 2})); // ac
   max-width: $bp--2000;
   // Using these 3 properties allows us to maintain aspect ratio, and stretch the content to fit the container
-  padding: 0 0 56.25%; // 16:9 aspect ratio for bottom padding (9 / 16 = 0.5625)
+  padding: 0 0 53.65%;
   position: relative;
   overflow: hidden;
   // Remove some default button styling, because we need this to be a clickable element
@@ -22,5 +22,10 @@
     left: 0;
     width: 100%;
     height: 100%;
+  }
+  &-title {
+    text-align: center;
+    color: $color--white;
+    margin-top: $spacing--1500;
   }
 }

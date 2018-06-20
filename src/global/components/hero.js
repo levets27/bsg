@@ -1,22 +1,35 @@
 // Framework Imports
-import React, { Fragment } from "react";
+import React from "react";
+import PropTypes from "prop-types";
 // Styles
 import "./styles/hero.css";
 
 const Hero = props => {
-  return (
-    <Fragment>
-      <div
-        className="Hero"
-        style={{ backgroundImage: "url('" + props.image + "')" }}
-      />
-      {props.children && (
-        <div className="Hero-content">
-          <div className="Hero-content-inner">{props.children}</div>
-        </div>
-      )}
-    </Fragment>
+  const image = props.fullscreen ? (
+    <div
+      className="Hero-image Hero-image--fullscreen"
+      style={{ backgroundImage: `url('${props.image}')` }}
+    />
+  ) : (
+    <img className="Hero-image" src={props.image} />
   );
+  return (
+    <div
+      className={`Hero ${
+        props.fullscreen ? "Hero--fullscreen" : "Hero--banner"
+      }`}
+      style={{ height: props.fullscreen ? null : props.height && props.height }}
+    >
+      {image}
+      {props.children && <div className="Hero-content">{props.children}</div>}
+    </div>
+  );
+};
+
+Hero.propTypes = {
+  image: PropTypes.string.isRequired,
+  fullscreen: PropTypes.bool,
+  height: PropTypes.string
 };
 
 export default Hero;

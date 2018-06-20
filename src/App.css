@@ -8,8 +8,7 @@ $font-size--1000:             1rem;    // 16px
 $font-size--500:              .813rem; // 13px
  */
 .MainContent {
-  position: absolute;
-  top: calc(100vh - 70px);
+  position: relative;
   width: 100vw;
   max-width: 100%;
   background: #01264f; }

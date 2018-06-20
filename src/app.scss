@@ -3,8 +3,7 @@
 
 // Component styles below
 .MainContent {
-  position: absolute;
-  top: calc(100vh - 70px);
+  position: relative;
   width: 100vw;
   max-width: 100%;
   background: $color--background;

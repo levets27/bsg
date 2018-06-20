@@ -1,5 +1,6 @@
 // Framework Imports
 import React, { Fragment } from "react";
+// import LazyLoad from "react-lazyload";
 // Component Styles
 import "./app.css";
 // Component Imports
@@ -30,8 +31,16 @@ const App = () => {
         <Video
           id="TAsShJwaruA"
           placeholderImg={dosVidPlaceholder}
-          title="DoS Trailer"
+          title="Depths of Sanity - PAX East 2018 Trailer"
           autoplay
+          showTitle
+        />
+        <Video
+          id="TAsShJwaruA"
+          placeholderImg={dosVidPlaceholder}
+          title="Depths of Sanity - PAX East 2018 Trailer"
+          autoplay
+          showTitle
         />
         <Footer />
       </main>

@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, Fragment } from "react";
 import PropTypes from "prop-types";
 import "./styles/video.css";
 
@@ -12,43 +12,50 @@ class Video extends Component {
     });
   };
   render() {
-    const autoplay = this.props.autoplay ? "?autoplay=1" : "";
-    let videoEl;
-    if (this.state.play) {
-      videoEl = (
-        <h2 className="Video">
-          <iframe
-            title={this.props.title}
-            className="Video-frame"
-            src={`https://www.youtube.com/embed/${this.props.id}${autoplay}`}
-            frameBorder="0"
-            allow="autoplay"
-            allowFullScreen
-          />
-        </h2>
-      );
-    } else {
-      videoEl = (
-        <button className="Video" onClick={this.playVideo}>
-          <h2 className="Video-placeholder">
-            <img
-              className="Video-placeholderImg"
-              src={this.props.placeholderImg}
-              alt={this.props.title}
+    const autoplayParam = this.props.autoplay ? "?autoplay=1" : "";
+    const WrapperEl = this.props.showTitle ? "div" : "h2";
+    const title = this.props.showTitle && (
+      <h2 className="Video-title">{this.props.title}</h2>
+    );
+
+    return (
+      <Fragment>
+        {title}
+        {this.state.play ? (
+          <WrapperEl className="Video">
+            <iframe
+              title={this.props.title}
+              className="Video-frame"
+              src={`https://www.youtube.com/embed/${
+                this.props.id
+              }${autoplayParam}`}
+              frameBorder="0"
+              allow="autoplay"
+              allowFullScreen
             />
-          </h2>
-        </button>
-      );
-    }
-    return videoEl;
+          </WrapperEl>
+        ) : (
+          <button className="Video" onClick={this.playVideo}>
+            <WrapperEl className="Video-placeholder">
+              <img
+                className="Video-placeholderImg"
+                src={this.props.placeholderImg}
+                alt={!this.props.showTitle ? this.props.title : ""}
+              />
+            </WrapperEl>
+          </button>
+        )}
+      </Fragment>
+    );
   }
 }
 
 Video.propTypes = {
-  videoTitle: PropTypes.string,
   autoplay: PropTypes.bool,
-  placeholderImg: PropTypes.node,
-  title: PropTypes.string
+  showTitle: PropTypes.bool,
+  title: PropTypes.string,
+  placeholderImg: PropTypes.string,
+  id: PropTypes.string
 };
 
 export default Video;

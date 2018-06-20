@@ -1,4 +1,6 @@
+// Framework Imports
 import React from "react";
+// Component Styles
 import "./styles/footer.css";
 
 const Footer = () => {

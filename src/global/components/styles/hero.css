@@ -8,29 +8,49 @@ $font-size--1000:             1rem;    // 16px
 $font-size--500:              .813rem; // 13px
  */
 .Hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
-  top: 0; }
-  .Hero, .Hero-content {
+  top: 0;
+  display: flex; }
+  .Hero, .Hero-image {
     max-width: 100%;
-    width: 100vw;
-    height: 100vh; }
-  .Hero-content {
+    width: 100vw; }
+  .Hero--fullscreen {
+    height: calc(100vh - 70px); }
+    .Hero--fullscreen .Hero-image {
+      height: calc(100vh - 70px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat; }
+      .Hero--fullscreen .Hero-image .Hero-content {
+        position: relative; }
+  .Hero--banner {
     position: relative;
+    overflow: hidden; }
+    .Hero--banner .Hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%); }
+  .Hero-image--fullscreen {
+    height: calc(100vh - 70px);
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }
+  .Hero-content {
     z-index: 1;
-    display: flex;
-    padding-bottom: 70px; }
-    .Hero-content-inner {
-      margin: auto;
-      max-width: 90%;
-      text-align: center; }
-      .Hero-content-inner img {
-        display: block;
-        margin-bottom: 1rem; }
-      .Hero-content-inner .Button:first-of-type {
-        margin-right: 0.5rem; }
-      @media screen and (min-width: 800px) {
-        .Hero-content-inner {
-          max-width: 60%; } }
+    margin: auto;
+    max-width: 90%;
+    text-align: center; }
+    .Hero-content img {
+      display: block;
+      margin-bottom: 1rem; }
+    .Hero-content .Button:first-of-type {
+      margin-right: 0.5rem; }
+    @media screen and (min-width: 800px) {
+      .Hero-content {
+        max-width: 60%; } }

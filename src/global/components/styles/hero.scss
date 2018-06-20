@@ -3,36 +3,64 @@
 
 // Component styles below
 .Hero {
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  position: fixed;
   top: 0;
+  display: flex;
   &,
-  &-content {
+  &-image {
     max-width: 100%;
     width: 100vw;
-    height: 100vh;
+  }
+  &--fullscreen {
+    height: calc(100vh - 70px);
+    .Hero-image {
+      height: calc(100vh - 70px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+      .Hero-content {
+        position: relative;
+      }
+    }
+  }
+  &--banner {
+    position: relative;
+    overflow: hidden;
+    .Hero-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  }
+  &-image {
+    &--fullscreen {
+      height: calc(100vh - 70px);
+      position: fixed;
+      top: 0;
+      left: 0;
+      background-position: center;
+      background-size: cover;
+      background-repeat: no-repeat;
+    }
   }
   &-content {
-    position: relative;
+    //position: absolute;
     z-index: 1;
-    display: flex;
-    padding-bottom: 70px; // Compensate for the nav overlay at the bottom - allows for better vertical centering
-    &-inner {
-      margin: auto;
-      max-width: 90%;
-      text-align: center;
-      img {
-        display: block;
-        margin-bottom: $spacing--1000;
-      }
-      .Button:first-of-type {
-        margin-right: $spacing--500;
-      }
-      @media screen and (min-width: $bp--1000) {
-        max-width: 60%;
-      }
+    margin: auto;
+    max-width: 90%;
+    text-align: center;
+    img {
+      display: block;
+      margin-bottom: $spacing--1000;
+    }
+    .Button:first-of-type {
+      margin-right: $spacing--500;
+    }
+    @media screen and (min-width: $bp--1000) {
+      max-width: 60%;
     }
   }
 }
