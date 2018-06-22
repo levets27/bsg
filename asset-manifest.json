@@ -1,9 +1,10 @@
 {
-  "main.css": "static/css/main.faca90be.css",
-  "main.css.map": "static/css/main.faca90be.css.map",
-  "main.js": "static/js/main.483d546b.js",
-  "main.js.map": "static/js/main.483d546b.js.map",
+  "main.css": "static/css/main.16bcbf45.css",
+  "main.css.map": "static/css/main.16bcbf45.css.map",
+  "main.js": "static/js/main.7b4a5ca9.js",
+  "main.js.map": "static/js/main.7b4a5ca9.js.map",
+  "static/media/bsg-bar-white.svg": "static/media/bsg-bar-white.a6697115.svg",
   "static/media/dos-hero.png": "static/media/dos-hero.fc3f5bad.png",
-  "static/media/dos-video-placeholder.png": "static/media/dos-video-placeholder.31c25b0b.png",
-  "static/media/logo-bar-white.svg": "static/media/logo-bar-white.a6697115.svg"
+  "static/media/dos-placeholder.png": "static/media/dos-placeholder.31c25b0b.png",
+  "static/media/play-btn.svg": "static/media/play-btn.7cdf700f.svg"
 }
