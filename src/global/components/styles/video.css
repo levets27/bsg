@@ -1,29 +1,36 @@
-/* $font-size--7000:             3rem; // 48px
-$font-size--6000:             2.25rem; // 36px -- PDP Price Only
-$font-size--5000:             2rem;    // 32px
-$font-size--4000:             1.75rem; // 28px
-$font-size--3000:             1.5rem;  // 24px
-$font-size--2000:             1.25rem; // 20px
-$font-size--1000:             1rem;    // 16px
-$font-size--500:              .813rem; // 13px
- */
-.Video {
-  margin: 1.5rem auto;
+.Video-wrapper {
   display: block;
-  width: calc(100% - (3rem));
-  max-width: 1280px;
+  width: 100%;
   padding: 0 0 53.65%;
   position: relative;
   overflow: hidden;
   background: 0;
   border: 0; }
-  .Video-frame, .Video-placeholder {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%; }
-  .Video-title {
-    text-align: center;
-    color: white;
-    margin-top: 1.5rem; }
+
+.Video-frame, .Video-placeholder {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.Video-title {
+  text-align: center;
+  color: white;
+  margin-bottom: 1.5rem; }
+
+.Video-placeholderImg {
+  height: 100%;
+  width: 100%; }
+
+.Video-playBtn {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 40%;
+  max-width: 100px;
+  opacity: .5;
+  transition: opacity .3s; }
+  .Video:hover .Video-playBtn {
+    opacity: 1; }

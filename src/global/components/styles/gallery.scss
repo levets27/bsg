@@ -1,0 +1,13 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.Gallery {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  .GalleryItem {
+    margin: $spacing--500;
+  }
+}

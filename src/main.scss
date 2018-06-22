@@ -1,0 +1,23 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.MainContent {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  background: $color--secondary;
+  z-index: 2;
+  &-section {
+    padding: $spacing--1500;
+    &:nth-child(odd) {
+      background: darken($color--secondary, 5%);
+    }
+    > * {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      max-width: $bp--3000;
+    }
+  }
+}

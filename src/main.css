@@ -1,0 +1,15 @@
+.MainContent {
+  position: relative;
+  width: 100vw;
+  max-width: 100%;
+  background: #01264f;
+  z-index: 2; }
+  .MainContent-section {
+    padding: 1.5rem; }
+    .MainContent-section:nth-child(odd) {
+      background: #011a36; }
+    .MainContent-section > * {
+      display: block;
+      width: 100%;
+      margin: 0 auto;
+      max-width: 1280px; }

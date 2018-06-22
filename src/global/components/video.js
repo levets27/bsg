@@ -1,6 +1,7 @@
-import React, { Component, Fragment } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import "./styles/video.css";
+import playBtn from "../../images/video/play-btn.svg";
 
 class Video extends Component {
   state = {
@@ -19,10 +20,10 @@ class Video extends Component {
     );
 
     return (
-      <Fragment>
+      <section className="Video">
         {title}
         {this.state.play ? (
-          <WrapperEl className="Video">
+          <WrapperEl className="Video-wrapper">
             <iframe
               title={this.props.title}
               className="Video-frame"
@@ -35,17 +36,18 @@ class Video extends Component {
             />
           </WrapperEl>
         ) : (
-          <button className="Video" onClick={this.playVideo}>
+          <button className="Video-wrapper" onClick={this.playVideo}>
             <WrapperEl className="Video-placeholder">
               <img
                 className="Video-placeholderImg"
                 src={this.props.placeholderImg}
                 alt={!this.props.showTitle ? this.props.title : ""}
               />
+              <img className="Video-playBtn" src={playBtn} alt="Play Video" />
             </WrapperEl>
           </button>
         )}
-      </Fragment>
+      </section>
     );
   }
 }

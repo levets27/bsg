@@ -11,7 +11,7 @@ const Hero = props => {
       style={{ backgroundImage: `url('${props.image}')` }}
     />
   ) : (
-    <img className="Hero-image" src={props.image} />
+    <img className="Hero-image" src={props.image} alt="" />
   );
   return (
     <div

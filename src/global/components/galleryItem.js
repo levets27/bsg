@@ -1,53 +1,52 @@
 // Framework Imports
 import React, { Component, Fragment } from "react";
+import Modal from "./modal";
 // import LazyLoad from "react-lazyload";
 // Component Styles
 import "./styles/galleryItem.css";
 
 class GalleryItem extends Component {
   state = {
-    isOpen: false
+    openModal: false
   };
-  openLargeImage = () => {
-    this.setState({
-      isOpen: !this.state.isOpen
-    });
+
+  openModal = (e, isOpen) => {
+    if (e.target === e.currentTarget) {
+      this.setState({ openModal: isOpen });
+    }
   };
+  open = e => this.openModal(e, true);
+  close = e => this.openModal(e, false);
+
   render() {
+    const { image, showTitleThumb, showTitleLarge } = this.props;
+
     return (
       <Fragment>
-        <img
-          className="GalleryItem-thumbnail"
-          src={this.props.thumbnail}
-          alt={this.props.title}
-          onClick={this.toggleLarge}
-        />
-        {this.state.showLargeImage && (
-          <Fragment>
-            <div className="GalleryItem-veil" onClick={this.toggleLarge} />
-            <div className="GalleryItem-large">
-              <button
-                className="GalleryItem-closeBtn"
-                onClick={this.toggleLarge}
-              >
-                X
-              </button>
-              <img
-                className="GalleryItem-largeImg"
-                src={this.props.largeImg}
-                alt={!this.props.showTitle && this.props.title}
-              />
-              {this.props.showTitle && (
-                <h3 className="GalleryItem-title">{this.props.title}</h3>
-              )}
-              {this.props.description && (
-                <p className="GalleryItem-description">
-                  {this.props.description}
-                </p>
-              )}
-            </div>
-          </Fragment>
-        )}
+        <button
+          className="GalleryItem"
+          onClick={this.open}
+          style={{ maxWidth: this.props.maxWidth }}
+        >
+          <img
+            className="GalleryItem-thumbnail"
+            src={image.thumbnail}
+            alt={!showTitleThumb ? image.title : ""}
+          />
+        </button>
+        <Modal isOpen={this.state.openModal} handleClose={this.close}>
+          <img
+            className="GalleryItem-content-image"
+            src={image.large}
+            alt={!showTitleLarge ? image.title : ""}
+          />
+          {showTitleLarge && (
+            <h3 className="GalleryItem-title">{image.title}</h3>
+          )}
+          {image.description && (
+            <p className="GalleryItem-description">{image.description}</p>
+          )}
+        </Modal>
       </Fragment>
     );
   }

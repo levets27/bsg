@@ -1,18 +1,26 @@
-/* $font-size--7000:             3rem; // 48px
-$font-size--6000:             2.25rem; // 36px -- PDP Price Only
-$font-size--5000:             2rem;    // 32px
-$font-size--4000:             1.75rem; // 28px
-$font-size--3000:             1.5rem;  // 24px
-$font-size--2000:             1.25rem; // 20px
-$font-size--1000:             1rem;    // 16px
-$font-size--500:              .813rem; // 13px
- */
 .Hero {
-  top: 0;
-  display: flex; }
-  .Hero, .Hero-image {
-    max-width: 100%;
-    width: 100vw; }
+  position: relative;
+  transform-origin: 0 0;
+  transform: translateZ(-1px) scale(2);
+  z-index: -1; }
+  .Hero-image {
+    display: block;
+    width: 100%;
+    height: auto; }
+  .Hero-content {
+    position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 90%;
+    max-width: 650px;
+    text-align: center; }
+    .Hero-content img {
+      display: block;
+      margin-bottom: 1rem; }
+    .Hero-content .Button {
+      margin: 0.25rem; }
   .Hero--fullscreen {
     height: calc(100vh - 70px); }
     .Hero--fullscreen .Hero-image {
@@ -23,34 +31,3 @@ $font-size--500:              .813rem; // 13px
       background-position: center;
       background-size: cover;
       background-repeat: no-repeat; }
-      .Hero--fullscreen .Hero-image .Hero-content {
-        position: relative; }
-  .Hero--banner {
-    position: relative;
-    overflow: hidden; }
-    .Hero--banner .Hero-content {
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%); }
-  .Hero-image--fullscreen {
-    height: calc(100vh - 70px);
-    position: fixed;
-    top: 0;
-    left: 0;
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat; }
-  .Hero-content {
-    z-index: 1;
-    margin: auto;
-    max-width: 90%;
-    text-align: center; }
-    .Hero-content img {
-      display: block;
-      margin-bottom: 1rem; }
-    .Hero-content .Button:first-of-type {
-      margin-right: 0.5rem; }
-    @media screen and (min-width: 800px) {
-      .Hero-content {
-        max-width: 60%; } }
