@@ -1,0 +1,14 @@
+.MainSection {
+  padding: 1.5rem; }
+  .MainSection > * {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: 1280px; }
+  .MainSection h3 {
+    margin-top: 1rem; }
+  .MainSection p {
+    margin: 1rem auto;
+    max-width: 650px; }
+  .MainSection--alt {
+    background: #011a36; }

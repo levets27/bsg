@@ -1,0 +1,42 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.MainSection {
+  padding: $spacing--1500;
+  position: relative;
+  > * {
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+    max-width: $bp--3000;
+  }
+  &-heading {
+    margin-top: $spacing--1000;
+  }
+  &-content {
+    margin: $spacing--1000 auto;
+    max-width: $bp--1000;
+  }
+  &--alt {
+    background: $color--tertiary;
+    padding: $spacing--3000 $spacing--1500;
+  }
+  &-headerImg,
+  &-footerImg {
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  &-headerImg {
+    top: 0;
+  }
+  &-footerImg {
+    bottom: 0;
+  }
+  &:nth-last-child(2) {
+    .MainSection-footerImg {
+      display: none; // Hide footer image if this is the last section
+    }
+  }
+}
