@@ -3,13 +3,9 @@
   transform-origin: 0 0;
   transform: translateZ(-1px) scale(2);
   z-index: -1; }
-  .Hero-image {
-    display: block;
-    width: 100%;
-    height: auto; }
   .Hero-content {
     position: absolute;
-    z-index: 1;
+    z-index: 3;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
@@ -18,16 +14,18 @@
     text-align: center; }
     .Hero-content img {
       display: block;
+      width: 100%;
       margin-bottom: 1rem; }
     .Hero-content .Button {
       margin: 0.25rem; }
   .Hero--fullscreen {
     height: calc(100vh - 70px); }
-    .Hero--fullscreen .Hero-image {
-      height: calc(100vh - 70px);
-      position: fixed;
-      top: 0;
-      left: 0;
-      background-position: center;
-      background-size: cover;
-      background-repeat: no-repeat; }
+    .Hero--fullscreen .Image {
+      height: 100%;
+      object-fit: cover; }
+      .Hero--fullscreen .Image-wrap {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%; }

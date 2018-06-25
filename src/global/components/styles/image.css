@@ -1,0 +1,11 @@
+.Image {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease; }
+  .Image.isLoaded {
+    opacity: 1; }
+  .Image-wrap {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat; }

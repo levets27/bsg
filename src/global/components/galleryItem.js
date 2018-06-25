@@ -1,7 +1,7 @@
 // Framework Imports
 import React, { Component, Fragment } from "react";
 import Modal from "./modal";
-// import LazyLoad from "react-lazyload";
+import Image from "./image";
 // Component Styles
 import "./styles/galleryItem.css";
 
@@ -35,9 +35,10 @@ class GalleryItem extends Component {
           />
         </button>
         <Modal isOpen={this.state.openModal} handleClose={this.close}>
-          <img
+          <Image
             className="GalleryItem-content-image"
             src={image.large}
+            placeholder={image.thumbnail}
             alt={!showTitleLarge ? image.title : ""}
           />
           {showTitleLarge && (

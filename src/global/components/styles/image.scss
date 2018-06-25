@@ -1,0 +1,18 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.Image {
+  display: block;
+  width: 100%;
+  opacity: 0;
+  transition: opacity 1s ease;
+  &.isLoaded {
+    opacity: 1;
+  }
+  &-wrap {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+}

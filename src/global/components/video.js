@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import PropTypes from "prop-types";
+import Image from "./image";
 import "./styles/video.css";
 import playBtn from "../../images/video/play-btn.svg";
 
@@ -38,9 +39,10 @@ class Video extends Component {
         ) : (
           <button className="Video-wrapper" onClick={this.playVideo}>
             <WrapperEl className="Video-placeholder">
-              <img
+              <Image
                 className="Video-placeholderImg"
-                src={this.props.placeholderImg}
+                src={this.props.previewImage}
+                placeholder={this.props.placeholderImage}
                 alt={!this.props.showTitle ? this.props.title : ""}
               />
               <img className="Video-playBtn" src={playBtn} alt="Play Video" />
@@ -56,7 +58,7 @@ Video.propTypes = {
   autoplay: PropTypes.bool,
   showTitle: PropTypes.bool,
   title: PropTypes.string,
-  placeholderImg: PropTypes.string,
+  previewImage: PropTypes.string,
   id: PropTypes.string
 };
 
