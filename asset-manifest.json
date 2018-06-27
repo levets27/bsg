@@ -1,10 +1,14 @@
 {
-  "main.css": "static/css/main.16bcbf45.css",
-  "main.css.map": "static/css/main.16bcbf45.css.map",
-  "main.js": "static/js/main.7b4a5ca9.js",
-  "main.js.map": "static/js/main.7b4a5ca9.js.map",
-  "static/media/bsg-bar-white.svg": "static/media/bsg-bar-white.a6697115.svg",
+  "main.css": "static/css/main.b371a1ec.css",
+  "main.css.map": "static/css/main.b371a1ec.css.map",
+  "main.js": "static/js/main.d6162cea.js",
+  "main.js.map": "static/js/main.d6162cea.js.map",
+  "static/media/ballistick.png": "static/media/ballistick.1babd552.png",
+  "static/media/bbb.png": "static/media/bbb.11fb797a.png",
   "static/media/dos-hero.png": "static/media/dos-hero.fc3f5bad.png",
-  "static/media/dos-placeholder.png": "static/media/dos-placeholder.31c25b0b.png",
+  "static/media/dos-previewImage.png": "static/media/dos-previewImage.31c25b0b.png",
+  "static/media/jqa.png": "static/media/jqa.ce338663.png",
+  "static/media/page-background.png": "static/media/page-background.5049755a.png",
+  "static/media/page-foreground.png": "static/media/page-foreground.632304a4.png",
   "static/media/play-btn.svg": "static/media/play-btn.7cdf700f.svg"
 }
