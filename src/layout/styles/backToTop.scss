@@ -1,0 +1,29 @@
+// Must include global vars in all files
+@import 'global/all';
+
+// Component styles below
+.BackToTop {
+  position: absolute;
+  bottom: 20px;
+  right: 50px;
+  height: 40px;
+  width: 40px;
+  line-height: 30px;
+  padding: $spacing--500;
+  font-size: $font-size--2000;
+  font-weight: bold;
+  border-radius: $radius--500;
+  z-index: 99;
+  color: $color--white;
+  transition: background-color .3s;
+  background-color: $color--primary;
+  &:hover {
+    background-color: darken($color--primary, $tint--2000);
+  }
+  &-img {
+    position: absolute;
+    top: 5px;
+    right: -27px;
+    height: 30px;
+  }
+}

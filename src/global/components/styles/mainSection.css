@@ -1,6 +1,7 @@
 .MainSection {
   padding: 1.5rem;
-  position: relative; }
+  position: relative;
+  z-index: 1; }
   .MainSection > * {
     display: block;
     width: 100%;
@@ -10,7 +11,14 @@
     margin-top: 1rem; }
   .MainSection-content {
     margin: 1rem auto;
-    max-width: 650px; }
+    max-width: 768px; }
+    .MainSection-content li {
+      margin: 0.5rem 0; }
+    .MainSection-content--cta {
+      text-align: center; }
+      .MainSection-content--cta Button {
+        width: 80%;
+        max-width: 400px; }
   .MainSection--alt {
     background: #011226;
     padding: 3rem 1.5rem; }

@@ -2,12 +2,20 @@
 @import 'global/all';
 
 // Component styles below
-.GalleryItem {
+.ImageGalleryItem {
+  margin: $spacing--500;
+  text-align: center;
   &-thumbnail {
     width: 100%;
     height: auto;
-    flex-wrap: wrap;
     pointer-events: none; // So the click target is the button, not the image
   }
-  &-content {}
+  &-title {}
+  &-modal {
+    &-image{}
+    &-title {
+
+    }
+    &-description {}
+  }
 }

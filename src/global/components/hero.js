@@ -12,11 +12,6 @@ class Hero extends Component {
         className={`Hero ${
           this.props.fullscreen ? "Hero--fullscreen" : "Hero--banner"
         }`}
-        style={{
-          height: this.props.fullscreen
-            ? null
-            : this.props.height && this.props.height
-        }}
       >
         <Image src={this.props.imageSrc} placeholder={this.props.placeholder} />
         {this.props.children && (

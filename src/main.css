@@ -1,6 +1,14 @@
-.MainContent {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  background: #01264f;
-  z-index: 2; }
+.Main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  perspective-origin: 0 0; }
+  .Main-content {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    background: #01264f;
+    z-index: 2; }

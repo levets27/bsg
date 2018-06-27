@@ -19,12 +19,22 @@ class Image extends Component {
   }
 
   imageLoadHandler() {
-    this.setState({ imageLoadFinishedClass: IMAGE_FADE_IN_CLASS });
+    this.setState({
+      imageLoadFinishedClass: IMAGE_FADE_IN_CLASS
+    });
+    setTimeout(() => {
+      this.setState({
+        placeholderStyle: {}
+      });
+    }, 1000);
   }
-  cssClasses = `Image-wrap ${this.props.cssClasses}`;
+
   render() {
     return (
-      <div className={this.cssClasses} style={this.state.placeholderStyle}>
+      <div
+        className={`Image-wrap ${this.props.cssClasses}`}
+        style={this.state.placeholderStyle}
+      >
         <img
           className={`Image ${this.state.imageLoadFinishedClass}`}
           alt={this.props.alt}

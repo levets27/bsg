@@ -1,7 +1,0 @@
-.Gallery {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-wrap: wrap; }
-  .Gallery .GalleryItem {
-    margin: 0.5rem; }

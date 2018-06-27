@@ -2,10 +2,19 @@
 @import 'global/all';
 
 // Component styles below
-.MainContent {
-  position: relative;
-  width: 100vw;
-  max-width: 100%;
-  background: $color--secondary;
-  z-index: 2;
+.Main {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden;
+  overflow-y: scroll;
+  perspective: 1px;
+  perspective-origin: 0 0;
+  &-content {
+    position: relative;
+    width: 100vw;
+    max-width: 100%;
+    background: $color--secondary;
+    z-index: 2;
+  }
 }

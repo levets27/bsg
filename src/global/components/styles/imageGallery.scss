@@ -2,12 +2,8 @@
 @import 'global/all';
 
 // Component styles below
-.Gallery {
+.ImageGallery {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-wrap: wrap;
-  .GalleryItem {
-    margin: $spacing--500;
-  }
 }

@@ -1,0 +1,19 @@
+.NavBar {
+  flex-grow: 1;
+  margin-left: 1rem; }
+  .NavBar-list {
+    display: flex;
+    justify-content: flex-end; }
+  .NavBar-item {
+    position: relative; }
+    .NavBar-item-link {
+      padding: 0.5rem 1rem;
+      cursor: pointer; }
+  .NavBar-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: 1rem; }
+    .NavBar-item:hover .NavBar-dropdown {
+      display: block; }

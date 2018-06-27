@@ -2,7 +2,7 @@
   display: block;
   width: 100%;
   opacity: 0;
-  transition: opacity 1s ease; }
+  transition: opacity .5s ease; }
   .Image.isLoaded {
     opacity: 1; }
   .Image-wrap {

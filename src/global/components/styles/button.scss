@@ -14,8 +14,8 @@
       border-color: $color--primary;
       color: $color--white;
       &:hover {
-        background-color: darken($color--primary, $tint);
-        border-color: darken($color--primary, $tint);
+        background-color: darken($color--primary, $tint--2000);
+        border-color: darken($color--primary, $tint--2000);
       }
     }
     &--ghost {

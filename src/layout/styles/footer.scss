@@ -1,7 +1,21 @@
 @import 'global/all';
 
 .Footer {
-  background: $color--black;
+  background: lighten($color--black, $tint--1000);
   color: $color--white;
   padding: $spacing--1000;
+  &-image,
+  &-imageWrap {
+    position: absolute;
+    bottom: 0;
+  }
+  &-imageWrap {
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+  &-image {
+    &--front {
+      z-index: 1;
+    }
 }
