@@ -98,14 +98,15 @@ const galleryImages = [
   }
 ];
 
+// Load footer images in the order you want them to layer... 2nd is on top of 1st, etc
 const footerImages = [
-  {
-    src: footerForeground,
-    thumbnail: footerForegroundThumbnail
-  },
   {
     src: footerBackground,
     thumbnail: footerBackgroundThumbnail
+  },
+  {
+    src: footerForeground,
+    thumbnail: footerForegroundThumbnail
   }
 ];
 

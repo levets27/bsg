@@ -1,6 +1,7 @@
 @import 'global/all';
 
 .Footer {
+  padding-top: 200px;
   &-content {
     background: $color--black;
     color: $color--white;
@@ -17,10 +18,5 @@
     z-index: -1;
     left: 0;
     right: 0;
-  }
-  &-image {
-    &--front {
-      z-index: 1;
-    }
   }
 }

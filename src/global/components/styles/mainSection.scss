@@ -38,6 +38,7 @@
     position: absolute;
     left: 0;
     right: 0;
+    max-width: none; // Override $bp--3000 above
   }
   &-headerImg {
     top: 0;

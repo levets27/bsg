@@ -25,7 +25,8 @@
   .MainSection-headerImg, .MainSection-footerImg {
     position: absolute;
     left: 0;
-    right: 0; }
+    right: 0;
+    max-width: none; }
   .MainSection-headerImg {
     top: 0; }
   .MainSection-footerImg {
