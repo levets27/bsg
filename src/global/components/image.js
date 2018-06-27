@@ -18,15 +18,22 @@ class Image extends Component {
     this.imageLoadHandler = this.imageLoadHandler.bind(this);
   }
 
-  imageLoadHandler() {
+  imageLoadHandler = () => {
     this.setState({
       imageLoadFinishedClass: IMAGE_FADE_IN_CLASS
     });
-    setTimeout(() => {
+    this.timerHandle = setTimeout(() => {
       this.setState({
         placeholderStyle: {}
       });
     }, 1000);
+  };
+
+  componentWillUnmount() {
+    if (this.timerHandle) {
+      clearTimeout(this.timerHandle);
+      this.timerHandle = 0;
+    }
   }
 
   render() {

@@ -38,7 +38,9 @@
     max-width: 100px;
     opacity: .5;
     transition: opacity .3s;
-    .Video:hover & {
+    .Video:hover &,
+    .Video:focus &,
+    .Video:active & {
       opacity: 1;
     }
   }

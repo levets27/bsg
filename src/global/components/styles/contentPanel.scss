@@ -1,0 +1,38 @@
+@import 'global/all';
+
+.ContentPanel {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-column-gap: $spacing--1000;
+  padding-bottom: $spacing--1000;
+  @media screen and (min-width: $bp--500) {
+    grid-template-columns: 1fr 1fr;
+    &:nth-child(2n) {
+      .ContentPanel {
+        &-image {
+          grid-column: 2;
+        }
+      }
+    }
+  }
+  @media screen and (min-width: $bp--1000) {
+    grid-template-columns: 1fr 1fr 1fr;
+    &-image {
+      grid-column: 1;
+      min-width: 200px;
+    }
+    &-content {
+      grid-column: 2 / span 2;
+    }
+    &:nth-child(2n) {
+      .ContentPanel {
+        &-image {
+          grid-column: 3;
+        }
+        &-content {
+          grid-column: 1 / span 2;
+        }
+      }
+    }
+  }
+}

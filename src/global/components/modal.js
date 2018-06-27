@@ -6,10 +6,6 @@ import Portal from "./portal";
 import "./styles/modal.css";
 
 class Modal extends Component {
-  static defaultProps = {
-    isOpen: false,
-    handleClose() {}
-  };
   render() {
     return (
       <Portal isOpen={this.props.isOpen}>
@@ -31,6 +27,10 @@ class Modal extends Component {
 
 Modal.propTypes = {
   isOpen: PropTypes.bool
+};
+Modal.defaultProps = {
+  isOpen: false,
+  handleClose() {}
 };
 
 export default Modal;

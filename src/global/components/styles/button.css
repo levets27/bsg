@@ -7,14 +7,14 @@
     background-color: #1f6db6;
     border-color: #1f6db6;
     color: white; }
-    .Button-color--primary:hover {
+    .Button-color--primary:hover, .Button-color--primary:focus, .Button-color--primary:active {
       background-color: #144675;
       border-color: #144675; }
   .Button-color--ghost {
     background-color: transparent;
     border-color: white;
     color: white; }
-    .Button-color--ghost:hover {
+    .Button-color--ghost:hover, .Button-color--ghost:focus, .Button-color--ghost:active {
       background-color: #1f6db6;
       border-color: #1f6db6; }
   .Button-size--small {

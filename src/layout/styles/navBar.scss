@@ -20,7 +20,9 @@
     top: 100%;
     right: 0;
     padding: $spacing--1000;
-    .NavBar-item:hover & {
+    .NavBar-item:hover &,
+    .NavBar-item:focus &,
+    .NavBar-item:active & {
       display: block;
     }
   }

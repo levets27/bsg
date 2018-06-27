@@ -28,7 +28,9 @@
   max-width: 100px;
   opacity: .5;
   transition: opacity .3s; }
-  .Video:hover .Video-playBtn {
+  .Video:hover .Video-playBtn,
+  .Video:focus .Video-playBtn,
+  .Video:active .Video-playBtn {
     opacity: 1; }
 
 .Video .Image {

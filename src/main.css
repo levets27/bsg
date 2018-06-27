@@ -10,5 +10,5 @@
     position: relative;
     width: 100vw;
     max-width: 100%;
-    background: #01264f;
+    background: linear-gradient(to bottom, #01264f 75%, #011226);
     z-index: 2; }

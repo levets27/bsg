@@ -1,30 +1,27 @@
 // Framework Imports
-import React, { Fragment } from "react";
+import React from "react";
 import Image from "../global/components/image";
-import foreground from "../images/layout/page-foreground.png";
-import foregroundThumbnail from "../images/layout/page-foreground.thumb.png";
-import background from "../images/layout/page-background.png";
-import backgroundThumbnail from "../images/layout/page-background.thumb.png";
 // Component Styles
 import "./styles/footer.css";
 
-const Footer = () => {
+const Footer = props => {
   return (
-    <Fragment>
-      <div className="Footer-imageWrap">
-        <Image
-          src={foreground}
-          placeholder={foregroundThumbnail}
-          cssClasses="Footer-image Footer-image--front"
-        />
-        <Image
-          src={background}
-          placeholder={backgroundThumbnail}
-          cssClasses="Footer-image Footer-image--back"
-        />
-      </div>
-      <footer className="Footer">© 2018 Bomb Shelter Games</footer>
-    </Fragment>
+    <footer className="Footer">
+      {props.images && (
+        <div className="Footer-imageWrap">
+          {props.images.map((image, index) => (
+            <Image
+              key={index}
+              src={image.src}
+              placeholder={image.thumbnail}
+              cssClasses="Footer-image"
+              style={{ zIndex: index }}
+            />
+          ))}
+        </div>
+      )}
+      <p className="Footer-content">© 2018 Bomb Shelter Games</p>
+    </footer>
   );
 };
 

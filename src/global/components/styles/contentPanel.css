@@ -1,0 +1,22 @@
+.ContentPanel {
+  display: grid;
+  grid-auto-flow: dense;
+  grid-column-gap: 1rem;
+  padding-bottom: 1rem; }
+  @media screen and (min-width: 480px) {
+    .ContentPanel {
+      grid-template-columns: 1fr 1fr; }
+      .ContentPanel:nth-child(2n) .ContentPanel-image {
+        grid-column: 2; } }
+  @media screen and (min-width: 650px) {
+    .ContentPanel {
+      grid-template-columns: 1fr 1fr 1fr; }
+      .ContentPanel-image {
+        grid-column: 1;
+        min-width: 200px; }
+      .ContentPanel-content {
+        grid-column: 2 / span 2; }
+      .ContentPanel:nth-child(2n) .ContentPanel-image {
+        grid-column: 3; }
+      .ContentPanel:nth-child(2n) .ContentPanel-content {
+        grid-column: 1 / span 2; } }

@@ -12,7 +12,7 @@ const Header = props => {
       <div className="Header-logoWrap">
         <Logo />
       </div>
-      <NavBar />
+      {props.showNav && <NavBar />}
     </header>
   );
 };

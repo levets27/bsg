@@ -14,7 +14,7 @@
     position: relative;
     width: 100vw;
     max-width: 100%;
-    background: $color--secondary;
+    background: linear-gradient(to bottom, $color--secondary 75%, $color--tertiary);
     z-index: 2;
   }
 }

@@ -7,17 +7,17 @@ import headerImg from "../../images/dividers/header.png";
 import footerImg from "../../images/dividers/footer.png";
 
 const MainSection = props => {
-  const showDividers = props.alt && props.showDividers;
+  const hasDividers = props.alt && props.hasDividers;
   return (
     <section
       className={`MainSection${props.alt ? " MainSection--alt" : ""}`}
       id={props.id}
     >
-      {showDividers && (
+      {hasDividers && (
         <img className="MainSection-headerImg" alt="" src={headerImg} />
       )}
       {props.children}
-      {showDividers && (
+      {hasDividers && (
         <img className="MainSection-footerImg" alt="" src={footerImg} />
       )}
     </section>

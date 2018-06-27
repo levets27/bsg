@@ -15,5 +15,7 @@
     top: 100%;
     right: 0;
     padding: 1rem; }
-    .NavBar-item:hover .NavBar-dropdown {
+    .NavBar-item:hover .NavBar-dropdown,
+    .NavBar-item:focus .NavBar-dropdown,
+    .NavBar-item:active .NavBar-dropdown {
       display: block; }

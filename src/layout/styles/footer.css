@@ -1,15 +1,17 @@
-.Footer {
-  background: #1a1a1a;
+.Footer-content {
+  background: black;
   color: white;
-  padding: 1rem; }
-  .Footer-image, .Footer-imageWrap {
-    position: absolute;
-    bottom: 0; }
-  .Footer-imageWrap {
-    z-index: -1;
-    left: 0;
-    right: 0; }
-  .Footer-image--front {
-    z-index: 1; }
-  .Footer-image .Image {
-    object-fit: cover; }
+  font-size: 0.833rem;
+  padding: 0.5rem 1rem; }
+
+.Footer-image, .Footer-imageWrap {
+  position: absolute;
+  bottom: 0; }
+
+.Footer-imageWrap {
+  z-index: -1;
+  left: 0;
+  right: 0; }
+
+.Footer-image--front {
+  z-index: 1; }

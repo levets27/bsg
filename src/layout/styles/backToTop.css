@@ -1,22 +1,36 @@
 .BackToTop {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px;
   right: 50px;
-  height: 40px;
-  width: 40px;
-  line-height: 30px;
-  padding: 0.5rem;
-  font-size: 1.222rem;
-  font-weight: bold;
-  border-radius: 0.5rem;
   z-index: 99;
   color: white;
-  transition: background-color .3s;
-  background-color: #1f6db6; }
-  .BackToTop:hover {
+  font-size: 1.222rem;
+  font-weight: bold;
+  line-height: 30px;
+  background-color: #262626;
+  border: 1px solid #262626;
+  border-radius: 0.5rem;
+  height: 40px;
+  padding: 0.5rem;
+  width: 40px;
+  transition: background-color .3s, border-color .3s, opacity .7s;
+  animation-name: fadeIn;
+  animation-duration: .7s; }
+  .BackToTop:hover, .BackToTop:focus, .BackToTop:active {
+    border-color: white;
     background-color: #144675; }
-  .BackToTop-img {
+  .BackToTop-image {
     position: absolute;
     top: 5px;
     right: -27px;
     height: 30px; }
+  .BackToTop.fadeIn {
+    opacity: 1; }
+  .BackToTop.fadeOut {
+    opacity: 0; }
+
+@keyframes fadeIn {
+  from {
+    opacity: 0; }
+  to {
+    opacity: 1; } }

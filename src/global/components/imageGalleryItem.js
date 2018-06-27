@@ -21,13 +21,7 @@ class ImageGalleryItem extends Component {
 
   render() {
     // todo - add error if image.src doesn't exist
-    const {
-      image,
-      maxItemWidth,
-      showTitleThumb,
-      showTitleModal,
-      showModal
-    } = this.props;
+    const { image, showTitleThumb, showTitleModal, showModal } = this.props;
 
     const ItemEl = image.href === null ? "button" : "a";
     const thumbnail = image.thumbnail ? image.thumbnail : image.src;
@@ -38,9 +32,6 @@ class ImageGalleryItem extends Component {
           className="ImageGalleryItem"
           href={image.href}
           onClick={showModal ? this.open : null}
-          style={{
-            maxWidth: maxItemWidth
-          }}
         >
           <img
             className="ImageGalleryItem-thumbnail"
@@ -51,7 +42,7 @@ class ImageGalleryItem extends Component {
             <p className="ImageGalleryItem-title">{image.title}</p>
           )}
         </ItemEl>
-        {this.showModal && (
+        {showModal && (
           <Modal isOpen={this.state.openModal} handleClose={this.close}>
             <Image
               className="ImageGalleryItem-modal-image"
@@ -80,10 +71,6 @@ ImageGalleryItem.propTypes = {
   showModal: PropTypes.bool,
   showTitleThumb: PropTypes.bool,
   showTitleModal: PropTypes.bool
-};
-
-ImageGalleryItem.defaultProps = {
-  maxItemWidth: "300px"
 };
 
 export default ImageGalleryItem;
