@@ -11,7 +11,7 @@
   .Logo:hover, .Logo:focus, .Logo:active {
     color: #ffde42; }
     .Logo:hover .Logo-bomb-warning, .Logo:focus .Logo-bomb-warning, .Logo:active .Logo-bomb-warning {
-      animation: spin 1.5s infinite linear;
+      animation: spin 1.5s infinite linear, colorFade 2s infinite linear;
       animation-duration: 1.5s;
       animation-iteration-count: infinite;
       animation-timing-function: linear; }
