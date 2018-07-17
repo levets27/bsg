@@ -40,70 +40,71 @@ import footerForeground from "./images/layout/page-foreground.png";
 import footerForegroundThumbnail from "./images/layout/page-foreground.thumb.png";
 import footerBackground from "./images/layout/page-background.png";
 import footerBackgroundThumbnail from "./images/layout/page-background.thumb.png";
+// Screenshots
+import screenshot1 from "./images/screenshots/dos/1.png";
+import screenshot2 from "./images/screenshots/dos/2.png";
+import screenshot3 from "./images/screenshots/dos/3.png";
+import screenshot4 from "./images/screenshots/dos/4.png";
+import screenshot5 from "./images/screenshots/dos/5.png";
+import screenshot6 from "./images/screenshots/dos/6.png";
+import screenshot7 from "./images/screenshots/dos/7.png";
+import screenshot8 from "./images/screenshots/dos/8.png";
+import screenshot9 from "./images/screenshots/dos/9.png";
 
 const galleryImages = [
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot1,
+    title: "Screenshot!",
+    src: screenshot1,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot2,
+    title: "Screenshot!",
+    src: screenshot2,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot3,
+    title: "Screenshot!",
+    src: screenshot3,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot4,
+    title: "Screenshot!",
+    src: screenshot4,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot5,
+    title: "Screenshot!",
+    src: screenshot5,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot6,
+    title: "Screenshot!",
+    src: screenshot6,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot7,
+    title: "Screenshot!",
+    src: screenshot7,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot8,
+    title: "Screenshot!",
+    src: screenshot8,
+    description: "Some awesome in-game action from Depths of Sanity"
   },
   {
-    thumbnail: "https://www.fillmurray.com/g/200/200",
-    title: "Fill Murray",
-    src: "https://www.fillmurray.com/g/700/700",
-    description:
-      "This is a classic image of Bill Murray, presented by fillmurray.com"
+    thumbnail: screenshot9,
+    title: "Screenshot!",
+    src: screenshot9,
+    description: "Some awesome in-game action from Depths of Sanity"
   }
 ];
 
