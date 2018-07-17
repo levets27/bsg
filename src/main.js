@@ -182,6 +182,7 @@ class Main extends Component {
   };
 
   // And here's the actual content
+  // todo - move links to bottom corners, remove button styling, use retro font
   render() {
     return (
       <Fragment>
