@@ -7,18 +7,16 @@ import headerImg from "../../images/dividers/header.png";
 import footerImg from "../../images/dividers/footer.png";
 
 const MainSection = props => {
-  const showTopDivider = props.showTopDivider;
-  const showBottomDivider = props.showBottomDivider;
   const cssClasses = `MainSection${props.alt ? " MainSection--alt" : ""}${
     props.fadeIn ? " MainSection--fadeIn" : ""
   }${props.fadeBg ? " MainSection--fadeBg" : ""}`;
   return (
     <section className={cssClasses} id={props.id}>
-      {showTopDivider && (
+      {props.topDivider && (
         <img className="MainSection-headerImg" alt="" src={headerImg} />
       )}
       {props.children}
-      {showBottomDivider && (
+      {props.bottomDivider && (
         <img className="MainSection-footerImg" alt="" src={footerImg} />
       )}
     </section>

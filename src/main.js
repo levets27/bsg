@@ -197,7 +197,7 @@ class Main extends Component {
           </Hero>
           <main className="Main-content" ref={this.mainContent}>
             <Header />
-            <MainSection id="trailer" fadeBg showBottomDivider>
+            <MainSection id="trailer" fadeBg bottomDivider>
               <Video
                 id="TAsShJwaruA"
                 previewImage={dosVidPreview}
@@ -294,7 +294,7 @@ class Main extends Component {
                 </p>
               </div>
             </MainSection>
-            <MainSection>
+            <MainSection alt topDivider bottomDivider>
               <h2 className="u-accessibleText">Screenshot Gallery</h2>
               <ImageGallery images={galleryImages} showModal />
             </MainSection>
