@@ -1,0 +1,16 @@
+.TypedContent {
+  margin-top: 1.5rem; }
+  .TypedContent::after {
+    display: inline-block;
+    content: '';
+    color: white;
+    width: 1em;
+    height: 1em;
+    background: white;
+    animation: blink 1s step-start 0s infinite; }
+  .TypedContent--removeCursor::after {
+    content: none; }
+
+@keyframes blink {
+  50% {
+    opacity: 0; } }

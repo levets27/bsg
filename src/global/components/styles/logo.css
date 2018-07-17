@@ -2,19 +2,14 @@
   width: 100%;
   display: block;
   color: white;
-  fill: currentColor; }
-  .Logo, .Logo-bomb-warning {
-    transition: color .5s, fill .5s; }
+  fill: currentColor;
+  transition: color .5s, fill .5s; }
   .Logo-bomb-warning {
-    color: #ffde42;
     transform-origin: 9.9057% 50%; }
   .Logo:hover, .Logo:focus, .Logo:active {
-    color: #ffde42; }
+    color: #ffc000; }
     .Logo:hover .Logo-bomb-warning, .Logo:focus .Logo-bomb-warning, .Logo:active .Logo-bomb-warning {
-      animation: spin 1.5s infinite linear, colorFade 2s infinite linear;
-      animation-duration: 1.5s;
-      animation-iteration-count: infinite;
-      animation-timing-function: linear; }
+      animation: spin 1.5s infinite linear; }
 
 @keyframes spin {
   0% {
@@ -24,8 +19,8 @@
 
 @keyframes colorFade {
   0% {
-    color: #ffde42; }
+    color: #ffc000; }
   50% {
     color: #ca1c05; }
   100% {
-    color: #ffde42; } }
+    color: #ffc000; } }

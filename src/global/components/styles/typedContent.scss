@@ -1,0 +1,25 @@
+@import 'global/all';
+
+.TypedContent {
+  margin-top: $spacing--1500;
+  &::after {
+    display: inline-block;
+    content: '';
+    color: $color--white;
+    width: 1em;
+    height: 1em;
+    background: $color--white;
+    animation: blink 1s step-start 0s infinite;
+  }
+  &--removeCursor {
+    &::after {
+      content: none;
+    }
+  }
+}
+
+@keyframes blink {
+  50% {
+    opacity: 0;
+  }
+}

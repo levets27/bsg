@@ -8,10 +8,29 @@
     margin: 0 auto;
     max-width: 1280px; }
   .MainSection-heading {
-    margin-top: 1rem; }
+    margin-top: 1rem;
+    transition: opacity 2s;
+    transition-delay: .5s; }
   .MainSection-content {
     margin: 1rem auto;
-    max-width: 768px; }
+    max-width: 768px;
+    position: relative; }
+    .MainSection-content.u-retroFont {
+      font-size: 0.833rem; }
+      @media screen and (min-width: 480px) {
+        .MainSection-content.u-retroFont {
+          font-size: 1rem; } }
+      .MainSection-content.u-retroFont .MainSection-heading {
+        margin: 2rem 0 1.5rem;
+        font-size: 1.222rem; }
+        @media screen and (min-width: 480px) {
+          .MainSection-content.u-retroFont .MainSection-heading {
+            font-size: 1.566rem; } }
+    .MainSection-content-introText {
+      margin-top: 1.5rem; }
+    .MainSection-content-typingWrapper {
+      position: absolute;
+      top: 0; }
     .MainSection-content li {
       margin: 0.5rem 0; }
     .MainSection-content--cta {
@@ -19,9 +38,27 @@
       .MainSection-content--cta Button {
         width: 80%;
         max-width: 400px; }
+  .MainSection-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around; }
+    .MainSection-features li {
+      text-align: center;
+      width: 80%;
+      margin-bottom: 1rem; }
+      @media screen and (min-width: 768px) {
+        .MainSection-features li {
+          width: 45%; } }
+      .MainSection-features li p {
+        text-align: left; }
+    .MainSection-features h4 {
+      font-size: 0.833rem;
+      margin-bottom: 0.5rem; }
   .MainSection--alt {
     background: #011226;
     padding: 3rem 1.5rem; }
+  .MainSection--fadeBg {
+    background: linear-gradient(to bottom, #01264f, #01264f 50%, #011226); }
   .MainSection-headerImg, .MainSection-footerImg {
     position: absolute;
     left: 0;

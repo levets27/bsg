@@ -20,12 +20,12 @@
       margin: 0.25rem; }
   .Hero--fullscreen {
     height: calc(100vh - 70px); }
-    .Hero--fullscreen .Image {
-      height: 100%;
-      object-fit: cover; }
-      .Hero--fullscreen .Image-wrap {
-        position: absolute;
-        top: 0;
-        left: 0;
-        width: 100%;
-        height: 100%; }
+    .Hero--fullscreen > .Image-wrap {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%; }
+      .Hero--fullscreen > .Image-wrap .Image {
+        height: 100%;
+        object-fit: cover; }
