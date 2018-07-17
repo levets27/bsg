@@ -21,7 +21,6 @@ class TypedContent extends Component {
             className={`TypedContent ${
               this.state.removeCursor ? "TypedContent--removeCursor" : ""
             }`}
-            aria-hidden={this.props.hasPlaceholderText ? "true" : "false"}
           >
             {this.props.play && (
               <Typing keyDelay={50} onDone={this.handleOnDone}>

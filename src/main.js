@@ -222,27 +222,27 @@ class Main extends Component {
                     {this.secondIntroParagraph}
                   </p>
                 </InViewMonitor>
-                <div className="MainSection-content-typingWrapper">
-                  {!this.state.endSecondParagraph && (
-                    <Fragment>
-                      <TypedContent
-                        play={this.state.playFirstParagraph}
-                        onDone={this.endFirstTyping}
-                        removeCursor
-                        hasPlaceholderText
-                      >
-                        {this.firstIntroParagraph}
-                      </TypedContent>
-                      <TypedContent
-                        play={this.state.endFirstParagraph}
-                        onDone={this.endSecondTyping}
-                        hasPlaceholderText
-                      >
-                        {this.secondIntroParagraph}
-                      </TypedContent>
-                    </Fragment>
-                  )}
-                </div>
+                {!this.state.endSecondParagraph && (
+                  <div
+                    className="MainSection-content-typingWrapper"
+                    aria-hidden="true"
+                    hidden
+                  >
+                    <TypedContent
+                      play={this.state.playFirstParagraph}
+                      onDone={this.endFirstTyping}
+                      removeCursor
+                    >
+                      {this.firstIntroParagraph}
+                    </TypedContent>
+                    <TypedContent
+                      play={this.state.endFirstParagraph}
+                      onDone={this.endSecondTyping}
+                    >
+                      {this.secondIntroParagraph}
+                    </TypedContent>
+                  </div>
+                )}
                 <h3
                   className={`MainSection-heading ${
                     this.state.endSecondParagraph ? "u-fadeIn" : "u-hidden"
