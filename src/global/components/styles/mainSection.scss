@@ -15,7 +15,7 @@
   &-heading {
     margin-top: $spacing--1000;
     transition: opacity 2s;
-    transition-delay: .5s;
+    transition-delay: 1s;
   }
   &-content {
     margin: $spacing--1000 auto;
@@ -24,7 +24,7 @@
     &.u-retroFont {
       font-size: $font-size--500;
       @media screen and (min-width: $bp--500) {
-        font-size: $font-size--1000;
+        font-size: $font-size--800;
       }
       .MainSection-heading {
         margin: $spacing--2000 0 $spacing--1500;
@@ -35,7 +35,7 @@
       }
     }
     &-introText {
-      margin-top: $spacing--1500;
+      padding-top: $spacing--1500;
     }
     &-typingWrapper {
       position: absolute;
@@ -68,7 +68,7 @@
       }
     }
     h4 {
-      font-size: $font-size--500;
+      font-size: $font-size--800;
       margin-bottom: $spacing--500;
     }
   }

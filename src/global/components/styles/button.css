@@ -19,7 +19,7 @@
       border-color: #1f6db6; }
   .Button-size--small {
     padding: 0.5rem 1rem;
-    font-size: 0.833rem;
+    font-size: 0.8rem;
     border-radius: 1rem; }
   .Button-size--medium {
     padding: 0.5rem 1rem;
@@ -29,5 +29,5 @@
     border-radius: 2rem; }
     @media screen and (min-width: 650px) {
       .Button-size--large {
-        font-size: 1.222rem;
+        font-size: 1.2rem;
         padding: 1rem 1.5rem; } }

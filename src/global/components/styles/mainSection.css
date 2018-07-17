@@ -10,24 +10,24 @@
   .MainSection-heading {
     margin-top: 1rem;
     transition: opacity 2s;
-    transition-delay: .5s; }
+    transition-delay: 1s; }
   .MainSection-content {
     margin: 1rem auto;
     max-width: 768px;
     position: relative; }
     .MainSection-content.u-retroFont {
-      font-size: 0.833rem; }
+      font-size: 0.8rem; }
       @media screen and (min-width: 480px) {
         .MainSection-content.u-retroFont {
-          font-size: 1rem; } }
+          font-size: 0.9rem; } }
       .MainSection-content.u-retroFont .MainSection-heading {
         margin: 2rem 0 1.5rem;
-        font-size: 1.222rem; }
+        font-size: 1.2rem; }
         @media screen and (min-width: 480px) {
           .MainSection-content.u-retroFont .MainSection-heading {
-            font-size: 1.566rem; } }
+            font-size: 1.5rem; } }
     .MainSection-content-introText {
-      margin-top: 1.5rem; }
+      padding-top: 1.5rem; }
     .MainSection-content-typingWrapper {
       position: absolute;
       top: 0; }
@@ -52,7 +52,7 @@
       .MainSection-features li p {
         text-align: left; }
     .MainSection-features h4 {
-      font-size: 0.833rem;
+      font-size: 0.9rem;
       margin-bottom: 0.5rem; }
   .MainSection--alt {
     background: #011226;

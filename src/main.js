@@ -226,7 +226,6 @@ class Main extends Component {
                   <div
                     className="MainSection-content-typingWrapper"
                     aria-hidden="true"
-                    hidden
                   >
                     <TypedContent
                       play={this.state.playFirstParagraph}
@@ -265,33 +264,42 @@ class Main extends Component {
                 <ul className="MainSection-features">
                   <li>
                     <img src={tilesIcon} alt="" />
-                    <h4 className="u-retroFont">6 Main Worlds</h4>
+                    <h4 className="u-retroFont">6 Worlds to Explore</h4>
                     <p>
-                      Reef, Caves, Sunken Ship, Volcano, Deep Ocean, The Depths
+                      Reef, Ship Graveyard, Caves, Volcano, Deep Ocean, The
+                      Depths
+                    </p>
+                  </li>
+                  <li>
+                    <img src={sonarIcon} alt="" />
+                    <h4 className="u-retroFont">Tons of Secrets</h4>
+                    <p>
+                      Use tools like sonar and a drill to navigate the dark
+                      depths in search of upgrades and unlocks
                     </p>
                   </li>
                   <li>
                     <img src={pickupsIcon} alt="" />
                     <h4 className="u-retroFont">Dozens of Unlockables</h4>
                     <p>
-                      Torpedoes, flares, sonar, depth charges, lasers, bounce
-                      shots, new hulls, and many more...
+                      Torpedoes, depth charges, lasers, bounce shots, diving
+                      equipment, new hulls, and much more
                     </p>
                   </li>
                   <li>
-                    <img src={sonarIcon} alt="" />
-                    <h4 className="u-retroFont">Unique Boss Fights</h4>
-                  </li>
-                  <li>
                     <img src={shipIcon} alt="" />
-                    <h4 className="u-retroFont">Pixel Art Graphics</h4>
+                    <h4 className="u-retroFont">360 Degrees of Gameplay</h4>
+                    <p>
+                      Take the helm of the O.R.C.A. in this new approach to the
+                      Metriodvania format
+                    </p>
                   </li>
                 </ul>
-                <p className="MainSection-content MainSection-content--cta">
+                {/*<p className="MainSection-content MainSection-content--cta">
                   <Button size="large" type="ghost">
                     Enter the Depths...
                   </Button>
-                </p>
+                </p> */}
               </div>
             </MainSection>
             <MainSection alt topDivider bottomDivider>
