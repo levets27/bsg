@@ -36,11 +36,14 @@ import ballistickLogo from "./images/games/ballistick.png";
 import bbbLogo from "./images/games/bbb.png";
 import jqaLogo from "./images/games/jqa.png";
 // Footer Images
+// todo - move this info to an external object?
 import footerForeground from "./images/layout/page-foreground.png";
 import footerForegroundThumbnail from "./images/layout/page-foreground.thumb.png";
 import footerBackground from "./images/layout/page-background.png";
 import footerBackgroundThumbnail from "./images/layout/page-background.thumb.png";
 // Screenshots
+// todo - move this info to an external object?
+// todo - hide image info until hover; see notes
 import screenshot1 from "./images/screenshots/dos/1.png";
 import screenshot2 from "./images/screenshots/dos/2.png";
 import screenshot3 from "./images/screenshots/dos/3.png";
