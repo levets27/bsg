@@ -1,8 +1,9 @@
 // Framework Imports
 import React from "react";
-import Image from "../global/components/image";
 // Component Styles
-import "./styles/footer.css";
+import "styles/layout/footer.css";
+// Component Imports
+import Image from "components/image";
 
 const Footer = props => {
   return (

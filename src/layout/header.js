@@ -1,10 +1,10 @@
 // Framework Imports
 import React from "react";
-// Styles
-import "./styles/header.css";
-// Components
-import Logo from "../global/components/logo";
-import NavBar from "./navBar";
+// Style Imports
+import "styles/layout/header.css";
+// ComponentI Imports
+import Logo from "components/logo";
+import NavBar from "layout/navBar";
 
 const Header = props => {
   return (

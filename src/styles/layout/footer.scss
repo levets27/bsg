@@ -1,0 +1,22 @@
+@import 'styles/global/all';
+
+.Footer {
+  padding-top: 200px;
+  &-content {
+    background: $color--black;
+    color: $color--white;
+    font-size: $font-size--500;
+    padding: $spacing--500 $spacing--1000;
+  }
+  // Decorative images at the bottom
+  &-image,
+  &-imageWrap {
+    position: absolute;
+    bottom: 0;
+  }
+  &-imageWrap {
+    z-index: -1;
+    left: 0;
+    right: 0;
+  }
+}

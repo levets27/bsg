@@ -5,54 +5,54 @@ import InViewMonitor from "react-inview-monitor";
 //import Typing from "react-typing-animation";
 //import LazyLoad from "react-lazyload";
 // Component Styles
-import "./main.css";
+import "styles/main.css";
 // Component Imports
-import Header from "./layout/header";
-import Hero from "./global/components/hero";
-import Image from "./global/components/image";
-import MainSection from "./global/components/mainSection";
-import Button from "./global/components/button";
-import Video from "./global/components/video";
-import TypedContent from "./global/components/typedContent";
-import ImageGallery from "./global/components/imageGallery";
-import ContentPanel from "./global/components/contentPanel";
-import Footer from "./layout/footer";
-import BackToTop from "./layout/backToTop";
+import Header from "layout/header";
+import Hero from "components/hero";
+import Image from "components/image";
+import MainSection from "components/mainSection";
+import Button from "components/button";
+import Video from "components/video";
+import TypedContent from "components/typedContent";
+import ImageGallery from "components/imageGallery";
+import ContentPanel from "components/contentPanel";
+import Footer from "layout/footer";
+import BackToTop from "layout/backToTop";
 // Images
 // Hero Banner Images
-import dosHero from "./images/hero/dos-hero.png";
-import dosHeroThumbnail from "./images/hero/dos-hero.thumb.png";
-import dosLogoThumbnail from "./images/logo/dos-tentacles-sm.png";
-import dosLogo from "./images/logo/dos-tentacles.png";
-import sonarIcon from "./images/icons/sonar.gif";
-import pickupsIcon from "./images/icons/pickups.png";
-import tilesIcon from "./images/icons/tiles.png";
-import shipIcon from "./images/icons/ship.png";
+import dosHero from "images/hero/dos-hero.png";
+import dosHeroThumbnail from "images/hero/dos-hero.thumb.png";
+import dosLogoThumbnail from "images/logo/dos-tentacles-sm.png";
+import dosLogo from "images/logo/dos-tentacles.png";
+import sonarIcon from "images/icons/sonar.gif";
+import pickupsIcon from "images/icons/pickups.png";
+import tilesIcon from "images/icons/tiles.png";
+import shipIcon from "images/icons/ship.png";
 // Video Preview Images
-import dosVidPreview from "./images/video/dos-previewImage.png";
-import dosVidThumbnail from "./images/video/dos-previewImage.thumb.png";
+import dosVidPreview from "images/video/dos-previewImage.png";
+import dosVidThumbnail from "images/video/dos-previewImage.thumb.png";
 // Our Games Images
-import ballistickLogo from "./images/games/ballistick.png";
-import bbbLogo from "./images/games/bbb.png";
-import jqaLogo from "./images/games/jqa.png";
+import ballistickLogo from "images/games/ballistick.png";
+import bbbLogo from "images/games/bbb.png";
+import jqaLogo from "images/games/jqa.png";
 // Footer Images
 // todo - move this info to an external object?
-import footerForeground from "./images/layout/page-foreground.png";
-import footerForegroundThumbnail from "./images/layout/page-foreground.thumb.png";
-import footerBackground from "./images/layout/page-background.png";
-import footerBackgroundThumbnail from "./images/layout/page-background.thumb.png";
+import footerForeground from "images/layout/page-foreground.png";
+import footerForegroundThumbnail from "images/layout/page-foreground.thumb.png";
+import footerBackground from "images/layout/page-background.png";
+import footerBackgroundThumbnail from "images/layout/page-background.thumb.png";
 // Screenshots
 // todo - move this info to an external object?
 // todo - hide image info until hover; see notes
-import screenshot1 from "./images/screenshots/dos/1.png";
-import screenshot2 from "./images/screenshots/dos/2.png";
-import screenshot3 from "./images/screenshots/dos/3.png";
-import screenshot4 from "./images/screenshots/dos/4.png";
-import screenshot5 from "./images/screenshots/dos/5.png";
-import screenshot6 from "./images/screenshots/dos/6.png";
-import screenshot7 from "./images/screenshots/dos/7.png";
-import screenshot8 from "./images/screenshots/dos/8.png";
-import screenshot9 from "./images/screenshots/dos/9.png";
+import screenshot1 from "images/screenshots/dos/1.png";
+import screenshot2 from "images/screenshots/dos/2.png";
+import screenshot3 from "images/screenshots/dos/3.png";
+import screenshot4 from "images/screenshots/dos/4.png";
+import screenshot5 from "images/screenshots/dos/5.png";
+import screenshot6 from "images/screenshots/dos/6.png";
+import screenshot7 from "images/screenshots/dos/7.png";
+import screenshot8 from "images/screenshots/dos/8.png";
+import screenshot9 from "images/screenshots/dos/9.png";
 
 const galleryImages = [
   {

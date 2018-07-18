@@ -1,6 +1,7 @@
 // Framework Imports
 import React from "react";
-import "./styles/navBar.css";
+// Style Imports
+import "styles/layout/navBar.css";
 
 const NavBar = props => {
   return (

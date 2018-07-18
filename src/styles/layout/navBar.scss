@@ -1,0 +1,29 @@
+@import 'styles/global/all';
+
+.NavBar {
+  flex-grow: 1;
+  margin-left: $spacing--1000;
+  &-list {
+    display: flex;
+    justify-content: flex-end;
+  }
+  &-item {
+    position: relative;
+    &-link {
+      padding: $spacing--500 $spacing--1000;
+      cursor: pointer; // todo remove after adding actual links
+    }
+  }
+  &-dropdown {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    padding: $spacing--1000;
+    .NavBar-item:hover &,
+    .NavBar-item:focus &,
+    .NavBar-item:active & {
+      display: block;
+    }
+  }
+}

@@ -1,8 +1,9 @@
 // Framework Imports
 import React, { Component } from "react";
-import diver from "../images/layout/diver-swim.gif";
-// Component Styles
-import "./styles/backToTop.css";
+// Style Imports
+import "styles/layout/backToTop.css";
+// Image Imports
+import diver from "images/layout/diver-swim.gif";
 
 class BackToTop extends Component {
   state = {

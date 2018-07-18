@@ -1,0 +1,9 @@
+// Must include global vars in all files
+@import 'styles/global/all';
+
+// Component styles below
+.ImageGallery {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
