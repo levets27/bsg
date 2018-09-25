@@ -196,8 +196,11 @@ class Main extends Component {
             <Button type="ghost" size="large" href="#trailer">
               Watch Trailer
             </Button>
-            <Button type="ghost" size="large" href="#demo">
+            <Button type="ghost" size="large" target="_blank" href="https://www.indiedb.com/games/depths-of-sanity/downloads/new-demo2">
               Download Demo
+            </Button>
+            <Button type="ghost" size="large" target="_blank" href="https://store.steampowered.com/app/848080/Depths_of_Sanity/">
+              Steam Page
             </Button>
           </Hero>
           <main className="Main-content" ref={this.mainContent}>
@@ -277,7 +280,7 @@ class Main extends Component {
                   </li>
                   <li>
                     <img src={sonarIcon} alt="" />
-                    <h4 className="u-retroFont">Tons of Secrets</h4>
+                    <h4 className="u-retroFont">Countless Secrets</h4>
                     <p>
                       Use tools like sonar and a drill to navigate the dark
                       depths in search of upgrades and unlocks

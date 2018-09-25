@@ -10,11 +10,12 @@
     left: 50%;
     transform: translate(-50%, -50%);
     width: 90%;
-    max-width: 650px;
     text-align: center; }
     .Hero-content img {
       display: block;
+      margin: auto;
       width: 100%;
+      max-width: 650px;
       margin-bottom: 1rem; }
     .Hero-content .Button {
       margin: 0.25rem; }
