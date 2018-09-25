@@ -1,6 +1,6 @@
 .BackToTop {
   position: absolute;
-  bottom: 50px;
+  bottom: 70px;
   right: 50px;
   z-index: 99;
   color: white;
@@ -17,7 +17,7 @@
   animation-name: fadeIn;
   animation-duration: .7s; }
   .BackToTop:hover, .BackToTop:focus, .BackToTop:active {
-    border-color: white;
+    border-color: rgba(255, 255, 255, 0.5);
     background-color: #144675; }
   .BackToTop-image {
     position: absolute;

@@ -4,7 +4,32 @@
     background: black;
     color: white;
     font-size: 0.8rem;
-    padding: 0.5rem 1rem; }
+    padding: 0.5rem 2rem;
+    display: flex;
+    align-items: center; }
+    .Footer-content-copyright {
+      margin-right: auto; }
+    .Footer-content-links {
+      display: flex;
+      align-items: center; }
+      .Footer-content-links-twitter,
+      .Footer-content-links-twitter img {
+        height: 40px;
+        display: block; }
+      .Footer-content-links-facebook {
+        padding: 5px;
+        height: 40px; }
+        .Footer-content-links-facebook img {
+          height: 30px;
+          width: 30px;
+          display: block; }
+      .Footer-content-links a {
+        text-decoration: none;
+        margin: 0 0.5rem;
+        border-radius: 0.5rem;
+        transition: background-color .3s; }
+        .Footer-content-links a:hover {
+          background: rgba(255, 255, 255, 0.2); }
   .Footer-image, .Footer-imageWrap {
     position: absolute;
     bottom: 0; }

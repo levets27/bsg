@@ -10,14 +10,12 @@ class Modal extends Component {
   render() {
     return (
       <Portal isOpen={this.props.isOpen}>
-        <div className="Modal-veil" onClick={this.props.handleClose}>
+        <div className={`Modal Modal--${this.props.type}`} onClick={this.props.handleClose}>
           <button className="Modal-close" onClick={this.props.handleClose}>
             Close
           </button>
           <div
-            className={`Modal-inner ${
-              this.props.hasBackground ? "Modal--image" : "Modal--content"
-            }`}
+            className="Modal-inner"
           >
             {this.props.children}
           </div>

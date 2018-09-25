@@ -5,7 +5,7 @@
 .BackToTop {
   // Positioning
   position: absolute;
-  bottom: 50px;
+  bottom: 70px;
   right: 50px;
   z-index: 99;
   // Font decoration
@@ -28,7 +28,7 @@
   &:hover,
   &:focus,
   &:active {
-    border-color: $color--white;
+    border-color: rgba($color--white, .5);
     background-color: darken($color--primary, $tint--2000);
   }
   // Position & size the diver gif

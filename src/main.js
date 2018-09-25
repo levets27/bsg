@@ -18,7 +18,10 @@ import ImageGallery from "components/imageGallery";
 import ContentPanel from "components/contentPanel";
 import Footer from "layout/footer";
 import BackToTop from "layout/backToTop";
-// Images
+// External Data
+import screenshotGallery from "data/screenshotGallery";
+import footerImages from "data/footerImages";
+import moreGames from "data/moreGames";
 // Hero Banner Images
 import dosHero from "images/hero/dos-hero.png";
 import dosHeroThumbnail from "images/hero/dos-hero.thumb.png";
@@ -31,97 +34,7 @@ import shipIcon from "images/icons/ship.png";
 // Video Preview Images
 import dosVidPreview from "images/video/dos-previewImage.png";
 import dosVidThumbnail from "images/video/dos-previewImage.thumb.png";
-// Our Games Images
-import ballistickLogo from "images/games/ballistick.png";
-import bbbLogo from "images/games/bbb.png";
-import jqaLogo from "images/games/jqa.png";
-// Footer Images
-// todo - move this info to an external object?
-import footerForeground from "images/layout/page-foreground.png";
-import footerForegroundThumbnail from "images/layout/page-foreground.thumb.png";
-import footerBackground from "images/layout/page-background.png";
-import footerBackgroundThumbnail from "images/layout/page-background.thumb.png";
-// Screenshots
-// todo - move this info to an external object?
-// todo - hide image info until hover; see notes
-import screenshot1 from "images/screenshots/dos/1.png";
-import screenshot2 from "images/screenshots/dos/2.png";
-import screenshot3 from "images/screenshots/dos/3.png";
-import screenshot4 from "images/screenshots/dos/4.png";
-import screenshot5 from "images/screenshots/dos/5.png";
-import screenshot6 from "images/screenshots/dos/6.png";
-import screenshot7 from "images/screenshots/dos/7.png";
-import screenshot8 from "images/screenshots/dos/8.png";
-import screenshot9 from "images/screenshots/dos/9.png";
 
-const galleryImages = [
-  {
-    thumbnail: screenshot1,
-    title: "Screenshot!",
-    src: screenshot1,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot2,
-    title: "Screenshot!",
-    src: screenshot2,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot3,
-    title: "Screenshot!",
-    src: screenshot3,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot4,
-    title: "Screenshot!",
-    src: screenshot4,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot5,
-    title: "Screenshot!",
-    src: screenshot5,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot6,
-    title: "Screenshot!",
-    src: screenshot6,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot7,
-    title: "Screenshot!",
-    src: screenshot7,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot8,
-    title: "Screenshot!",
-    src: screenshot8,
-    description: "Some awesome in-game action from Depths of Sanity"
-  },
-  {
-    thumbnail: screenshot9,
-    title: "Screenshot!",
-    src: screenshot9,
-    description: "Some awesome in-game action from Depths of Sanity"
-  }
-];
-
-// Load footer images in the order you want them to layer... 2nd is on top of 1st, etc
-const footerImages = [
-  {
-    src: footerBackground,
-    thumbnail: footerBackgroundThumbnail
-  },
-  {
-    src: footerForeground,
-    thumbnail: footerForegroundThumbnail
-  }
-];
 
 class Main extends Component {
   // Most of this is a bunch of garbage so we can control when we're showing the Back to Top button
@@ -207,10 +120,10 @@ class Main extends Component {
             <Header />
             <MainSection id="trailer" fadeBg bottomDivider>
               <Video
-                id="TAsShJwaruA"
+                id="T0Z--oChLn0"
                 previewImage={dosVidPreview}
                 placeholderImage={dosVidThumbnail}
-                title="Depths of Sanity - PAX East 2018 Trailer"
+                title="Depths of Sanity: Play-NYC Trailer"
                 autoplay
               />
               <div className="MainSection-content u-retroFont">
@@ -303,28 +216,20 @@ class Main extends Component {
                     </p>
                   </li>
                 </ul>
-                {/*<p className="MainSection-content MainSection-content--cta">
-                  <Button size="large" type="ghost">
-                    Enter the Depths...
-                  </Button>
-                </p> */}
               </div>
             </MainSection>
             <MainSection alt topDivider bottomDivider>
               <h2 className="u-accessibleText">Screenshot Gallery</h2>
-              <ImageGallery images={galleryImages} showModal />
+              <ImageGallery images={screenshotGallery} showModal showTitleModal />
             </MainSection>
             <MainSection>
               <h2 className="MainSection-heading">More Games</h2>
-              <ContentPanel image={ballistickLogo} imageAlt="Ballistick">
-                <p>Awesome info about Ballistick!</p>
-              </ContentPanel>
-              <ContentPanel image={bbbLogo} imageAlt="Ball Bounce Blast">
-                <p>Awesome info about Ball Bounce Blast!</p>
-              </ContentPanel>
-              <ContentPanel image={jqaLogo} imageAlt="Ballistick">
-                <p>Awesome info about John Q Averageman!</p>
-              </ContentPanel>
+              {moreGames.map((game, index) => (
+                <ContentPanel image={game.logo} imageAlt={game.title}>
+                  <p>{game.description}</p>
+                </ContentPanel>
+
+              ))}
             </MainSection>
             <Footer images={footerImages} />
           </main>

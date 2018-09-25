@@ -18,11 +18,4 @@
     display: block;
     pointer-events: none; // So the click target is the button, not the image
   }
-  &-title {}
-  &-modal {
-    &-title {
-
-    }
-    &-description {}
-  }
 }
