@@ -1,5 +1,10 @@
+// Framework Imports
 import React, { Component } from "react";
 import MailchimpSubscribe from "react-mailchimp-subscribe";
+// Component Imports
+import Button from "components/button";
+// Style Imports
+import "styles/components/contactForm.css";
 
 const MailChimpForm = ({ status, message, onValidated }) => {
   let email, name;
@@ -13,44 +18,36 @@ const MailChimpForm = ({ status, message, onValidated }) => {
     });
 
   return (
-    <div
-      style={{
-        background: "#efefef",
-        borderRadius: 2,
-        padding: 10,
-        display: "inline-block"
-      }}
-    >
-      {status === "sending" && <div style={{ color: "blue" }}>sending...</div>}
+    <div className="ContactForm">
+      <h2>Sign Up for Our Newsletter</h2>
+      {status === "sending" && (
+        <div className="ContactForm-message ContactForm-message--processing">
+          Sending...
+        </div>
+      )}
       {status === "error" && (
         <div
-          style={{ color: "red" }}
+          className="ContactForm-message ContactForm-message--error"
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
       {status === "success" && (
         <div
-          style={{ color: "green" }}
+          className="ContactForm-message ContactForm-message--success"
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
-      <input
-        style={{ fontSize: "2em", padding: 5 }}
-        ref={node => (name = node)}
-        type="text"
-        placeholder="Your name"
-      />
+      <input ref={node => (name = node)} type="text" placeholder="Your name" />
       <br />
       <input
-        style={{ fontSize: "2em", padding: 5 }}
         ref={node => (email = node)}
         type="email"
         placeholder="Your email"
       />
       <br />
-      <button style={{ fontSize: "2em", padding: 5 }} onClick={submit}>
+      <Button type="ghost" onClick={submit}>
         Submit
-      </button>
+      </Button>
     </div>
   );
 };

@@ -1,0 +1,34 @@
+.ContactForm {
+  width: 100%;
+  max-width: 480px;
+  padding: 0.5rem;
+  margin: auto;
+  text-align: center; }
+  .ContactForm input {
+    width: 100%;
+    margin: 0.5rem auto;
+    padding: 0.5rem; }
+  .ContactForm .Button {
+    width: 250px; }
+  .ContactForm-message {
+    padding: 0.5rem;
+    border: 2px solid;
+    border-radius: 0.5rem;
+    margin: 0.5rem 0;
+    font-size: 0.8rem; }
+    .ContactForm-message a {
+      color: inherit; }
+      .ContactForm-message a:hover {
+        text-decoration: none; }
+    .ContactForm-message--processing {
+      color: #1f6db6;
+      background-color: #dbeaf9;
+      border-color: #1f6db6; }
+    .ContactForm-message--error {
+      color: #ed0000;
+      background-color: #ffeded;
+      border-color: #ba0000; }
+    .ContactForm-message--success {
+      color: #138800;
+      background-color: #f0ffee;
+      border-color: #0c5500; }
