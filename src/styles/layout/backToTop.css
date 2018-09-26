@@ -6,12 +6,12 @@
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 35px;
   background-color: #262626;
   border: 1px solid #262626;
   border-radius: 0.5rem;
   height: 40px;
-  padding: 0.5rem;
+  padding: 0.25rem;
   width: 40px;
   transition: background-color .3s, border-color .3s, opacity .7s;
   animation-name: fadeIn;

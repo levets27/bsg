@@ -12,13 +12,13 @@
   color: $color--white;
   font-size: $font-size--2000;
   font-weight: bold;
-  line-height: 30px;
+  line-height: 35px;
   // Size, shape, color
   background-color: lighten($color--black, $tint--2000);
   border: 1px solid lighten($color--black, $tint--2000);
   border-radius: $radius--500;
   height: 40px;
-  padding: $spacing--500;
+  padding: $spacing--250;
   width: 40px;
   // Animation & Transition Effects
   transition: background-color .3s, border-color .3s, opacity .7s;
