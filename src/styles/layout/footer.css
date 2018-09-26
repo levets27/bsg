@@ -4,6 +4,7 @@
     background: black;
     color: white;
     font-size: 0.8rem;
+<<<<<<< HEAD
     padding: 0.5rem 2rem;
     display: flex;
     align-items: center; }
@@ -30,6 +31,18 @@
         transition: background-color .3s; }
         .Footer-content-links a:hover {
           background: rgba(255, 255, 255, 0.2); }
+=======
+    padding: 0.5rem 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center; }
+    @media screen and (min-width: 380px) {
+      .Footer-content {
+        justify-content: space-between; } }
+    .Footer-content-links iframe {
+      display: block; }
+>>>>>>> bunch of updates to things that I apparently didn't push last time... merge conflicts incoming
   .Footer-image, .Footer-imageWrap {
     position: absolute;
     bottom: 0; }

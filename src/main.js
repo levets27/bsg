@@ -16,6 +16,7 @@ import Video from "components/video";
 import TypedContent from "components/typedContent";
 import ImageGallery from "components/imageGallery";
 import ContentPanel from "components/contentPanel";
+import ContactForm from "components/contactForm";
 import Footer from "layout/footer";
 import BackToTop from "layout/backToTop";
 // External Data
@@ -34,7 +35,6 @@ import shipIcon from "images/icons/ship.png";
 // Video Preview Images
 import dosVidPreview from "images/video/dos-previewImage.png";
 import dosVidThumbnail from "images/video/dos-previewImage.thumb.png";
-
 
 class Main extends Component {
   // Most of this is a bunch of garbage so we can control when we're showing the Back to Top button
@@ -109,10 +109,20 @@ class Main extends Component {
             <Button type="ghost" size="large" href="#trailer">
               Watch Trailer
             </Button>
-            <Button type="ghost" size="large" target="_blank" href="https://www.indiedb.com/games/depths-of-sanity/downloads/new-demo2">
+            <Button
+              type="ghost"
+              size="large"
+              target="_blank"
+              href="https://www.indiedb.com/games/depths-of-sanity/downloads/new-demo2"
+            >
               Download Demo
             </Button>
-            <Button type="ghost" size="large" target="_blank" href="https://store.steampowered.com/app/848080/Depths_of_Sanity/">
+            <Button
+              type="ghost"
+              size="large"
+              target="_blank"
+              href="https://store.steampowered.com/app/848080/Depths_of_Sanity/"
+            >
               Steam Page
             </Button>
           </Hero>
@@ -220,8 +230,14 @@ class Main extends Component {
             </MainSection>
             <MainSection alt topDivider bottomDivider>
               <h2 className="u-accessibleText">Screenshot Gallery</h2>
-              <ImageGallery images={screenshotGallery} showModal showTitleModal />
+              <ImageGallery
+                images={screenshotGallery}
+                showModal
+                showTitleModal
+              />
             </MainSection>
+            {/*
+            Hiding the info about other games for now
             <MainSection>
               <h2 className="MainSection-heading">More Games</h2>
               {moreGames.map((game, index) => (
@@ -231,6 +247,8 @@ class Main extends Component {
 
               ))}
             </MainSection>
+            */}
+            <ContactForm />
             <Footer images={footerImages} />
           </main>
         </div>

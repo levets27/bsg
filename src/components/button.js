@@ -4,16 +4,16 @@ import React from "react";
 import "styles/components/button.css";
 
 const Button = props => {
-  const ButtonEl = props.href ? "a" : "button";
+  const { href, onClick, size, type, children, ...other } = props;
+  const ButtonEl = href ? "a" : "button";
   return (
     <ButtonEl
-      onClick={props.onClick}
-      href={props.href}
-      className={`Button Button-size--${props.size} Button-color--${
-        props.type
-      }`}
+      onClick={onClick}
+      href={href}
+      className={`Button Button-size--${size} Button-color--${type}`}
+      {...other}
     >
-      {props.children}
+      {children}
     </ButtonEl>
   );
 };
