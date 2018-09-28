@@ -15,6 +15,9 @@
     transform: translate(-50%, -50%);
     width: 90%;
     text-align: center;
+    @media screen and (max-width: $bp--1500) and (orientation: landscape) {
+      max-height: 100%;
+    }
     .Image,
     .Image-wrap {
       display: block;
@@ -22,13 +25,21 @@
       max-width: 650px;
       width: 100%;
       margin-bottom: $spacing--1000;
+      @media screen and (max-width: $bp--1500) and (orientation: landscape) {
+        max-width: 50vw;
+        max-height: 50vh;
+      }
     }
     .Button {
       margin: $spacing--250;
     }
   }
   &--fullscreen {
-    height: calc(100vh - 70px);
+    // Height compensates for the size of the header, which varies on different screen sizes
+    height: calc(100vh - 41px);
+    @media screen and (min-width: $bp--1500) {
+      height: calc(100vh - 70px);
+    }
     > .Image-wrap {
       position: absolute;
       top: 0;

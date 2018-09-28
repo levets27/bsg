@@ -9,7 +9,7 @@ import Image from "components/image";
 class Hero extends Component {
   render() {
     return (
-      <div
+      <nav
         className={`Hero ${
           this.props.fullscreen ? "Hero--fullscreen" : "Hero--banner"
         }`}
@@ -18,7 +18,7 @@ class Hero extends Component {
         {this.props.children && (
           <div className="Hero-content">{this.props.children}</div>
         )}
-      </div>
+      </nav>
     );
   }
 }

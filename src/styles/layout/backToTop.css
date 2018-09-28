@@ -1,8 +1,4 @@
 .BackToTop {
-  position: absolute;
-  bottom: 70px;
-  right: 50px;
-  z-index: 99;
   color: white;
   font-size: 1.2rem;
   font-weight: bold;
@@ -16,6 +12,15 @@
   transition: background-color .3s, border-color .3s, opacity .7s;
   animation-name: fadeIn;
   animation-duration: .7s; }
+  .BackToTop-wrap {
+    position: absolute;
+    bottom: 40px;
+    right: 30px;
+    z-index: 99; }
+    @media screen and (min-width: 768px) {
+      .BackToTop-wrap {
+        bottom: 70px;
+        right: 50px; } }
   .BackToTop:hover, .BackToTop:focus, .BackToTop:active {
     border-color: rgba(255, 255, 255, 0.5);
     background-color: #144675; }

@@ -44,4 +44,19 @@
       border-color: darken($color--success, $tint--1000);
     }
   }
+  &-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    @media screen and (min-width: $bp--300) {
+      flex-wrap: nowrap;
+    }
+    label {
+      width: 100%;
+      @media screen and (min-width: $bp--300) {
+        width: 20%;
+        text-align: left; // Overriding centered text above
+      }
+    }
+  }
 }

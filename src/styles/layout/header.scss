@@ -3,7 +3,7 @@
 
 // Component styles below
 .Header {
-  padding: $spacing--1000;
+  padding: $spacing--500;
   background: $color--black;
   color: $color--white;
   display: flex;
@@ -11,15 +11,15 @@
   position: sticky;
   top: 0;
   z-index: 2;
+  @media screen and (min-width: $bp--1500) {
+    padding: $spacing--1000;
+  }
   &-logoWrap {
     width: 90%;
-    max-width: 650px;
+    max-width: 350px;
     margin: auto;
-    // Styles for larger screens
-    // @media screen and (min-width: $bp--500) {
-    //  width: 60%;
-    //  max-width: 600px;
-    //  margin: 0;
-    // }
+    @media screen and (min-width: $bp--1500) {
+      max-width: 650px;
+    }
   }
 }

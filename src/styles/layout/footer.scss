@@ -9,6 +9,14 @@
     padding: $spacing--500 $spacing--2000;
     display: flex;
     align-items: center;
+    @media screen and (max-width: $bp--500) {
+      flex-wrap: wrap;
+      justify-content: center;
+      text-align: center;
+      &-copyright {
+        width: 100%;
+      }
+    }
     &-copyright {
       margin-right: auto;
     }
@@ -17,27 +25,60 @@
       align-items: center;
       &-twitter {
         &,
-        img {
+        svg {
           height: 40px;
+          width: 40px;
           display: block;
+        }
+        .cls-1 {
+          fill: none;
+        }
+        .cls-2 {
+          fill: currentColor;
+        }
+        &:hover svg {
+          color: #1da1f2; // Official Twitter color -- do not change
         }
       }
       &-facebook {
-        padding: 5px;
         height: 40px;
-        img {
-          height: 30px;
-          width: 30px;
+        svg {
+          height: 40px;
+          width: 25px;
           display: block;
+          .cls-1 {
+            fill: currentColor;
+          }
+          .cls-2 {
+            fill: none;
+          }
+        }
+        &:hover svg {
+          color: #4267b2; // Official Facebook color -- do not change
+        }
+      }
+      &-youtube {
+        height: 40px;
+        margin-left: $spacing--500;
+        svg {
+          height: 40px;
+          width: 32px;
+          .cls-1 {
+            fill: currentColor;
+          }
+        }
+        &:hover svg {
+          color: #ff0000; // Official YouTube color -- do not change
         }
       }
       a {
         text-decoration: none;
-        margin: 0 $spacing--500;
+        margin-right: $spacing--500;
         border-radius: $radius--500;
         transition: background-color .3s;
-        &:hover {
-          background: rgba($color--white, .2);
+        svg {
+          color: $color--white;
+          transition: color .3s;
         }
       }
     }
@@ -46,7 +87,7 @@
   &-image,
   &-imageWrap {
     position: absolute;
-    bottom: 0;
+    bottom: 1.3%; // Random tiny fraction, but it aligns properly when adjusting for the footer
   }
   &-imageWrap {
     z-index: -1;

@@ -32,3 +32,16 @@
       color: #138800;
       background-color: #f0ffee;
       border-color: #0c5500; }
+  .ContactForm-input {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center; }
+    @media screen and (min-width: 380px) {
+      .ContactForm-input {
+        flex-wrap: nowrap; } }
+    .ContactForm-input label {
+      width: 100%; }
+      @media screen and (min-width: 380px) {
+        .ContactForm-input label {
+          width: 20%;
+          text-align: left; } }

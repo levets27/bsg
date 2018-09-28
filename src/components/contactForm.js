@@ -37,14 +37,24 @@ const MailChimpForm = ({ status, message, onValidated }) => {
           dangerouslySetInnerHTML={{ __html: message }}
         />
       )}
-      <input ref={node => (name = node)} type="text" placeholder="Your name" />
-      <br />
-      <input
-        ref={node => (email = node)}
-        type="email"
-        placeholder="Your email"
-      />
-      <br />
+      <div className="ContactForm-input">
+        <label for="name">Name</label>
+        <input
+          id="name"
+          ref={node => (name = node)}
+          type="text"
+          placeholder="Your name here"
+        />
+      </div>
+      <div className="ContactForm-input">
+        <label for="email">Email</label>
+        <input
+          id="email"
+          ref={node => (email = node)}
+          type="email"
+          placeholder="yourname@email.com"
+        />
+      </div>
       <Button type="ghost" onClick={submit}>
         Submit
       </Button>

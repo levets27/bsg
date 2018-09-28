@@ -32,5 +32,10 @@ ImageGallery.propTypes = {
   showTitleThumb: PropTypes.bool,
   showTitleModal: PropTypes.bool
 };
+ImageGallery.defaultProps = {
+  showModal: false,
+  showTitleThumb: false,
+  showTitleModal: false
+};
 
 export default ImageGallery;

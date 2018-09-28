@@ -1,5 +1,5 @@
 .Header {
-  padding: 1rem;
+  padding: 0.5rem;
   background: black;
   color: white;
   display: flex;
@@ -7,7 +7,13 @@
   position: sticky;
   top: 0;
   z-index: 2; }
+  @media screen and (min-width: 768px) {
+    .Header {
+      padding: 1rem; } }
   .Header-logoWrap {
     width: 90%;
-    max-width: 650px;
+    max-width: 350px;
     margin: auto; }
+    @media screen and (min-width: 768px) {
+      .Header-logoWrap {
+        max-width: 650px; } }

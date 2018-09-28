@@ -41,14 +41,16 @@ class BackToTop extends Component {
   render() {
     return (
       this.state.show && (
-        <button
-          className={`BackToTop ${this.state.fadeClass}`}
-          onClick={this.goToTop}
-        >
-          &#8963;
-          <span className="u-accessibleText">Back To Top</span>
-          <img src={diver} className="BackToTop-image" alt="" />
-        </button>
+        <nav className="BackToTop-wrap">
+          <button
+            className={`BackToTop ${this.state.fadeClass}`}
+            onClick={this.goToTop}
+          >
+            &#8963;
+            <span className="u-accessibleText">Back To Top</span>
+            <img src={diver} className="BackToTop-image" alt="" />
+          </button>
+        </nav>
       )
     );
   }

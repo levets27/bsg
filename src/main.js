@@ -15,14 +15,15 @@ import Button from "components/button";
 import Video from "components/video";
 import TypedContent from "components/typedContent";
 import ImageGallery from "components/imageGallery";
-import ContentPanel from "components/contentPanel";
+// import ContentPanel from "components/contentPanel"; - not currently in use, for the More Games section
 import ContactForm from "components/contactForm";
+import ContactInfo from "components/contactInfo";
 import Footer from "layout/footer";
 import BackToTop from "layout/backToTop";
 // External Data
 import screenshotGallery from "data/screenshotGallery";
 import footerImages from "data/footerImages";
-import moreGames from "data/moreGames";
+// import moreGames from "data/moreGames"; - not currently in use, for the More Games section
 // Hero Banner Images
 import dosHero from "images/hero/dos-hero.png";
 import dosHeroThumbnail from "images/hero/dos-hero.thumb.png";
@@ -95,12 +96,12 @@ class Main extends Component {
   };
 
   // And here's the actual content
-  // todo - move links to bottom corners, remove button styling, use retro font
   render() {
     return (
       <Fragment>
         <div className="Main" onScroll={this.handleScroll}>
           <Hero imageSrc={dosHero} placeholder={dosHeroThumbnail} fullscreen>
+            <h1 className="u-accessibleText">Depths of Sanity</h1>
             <Image
               src={dosLogo}
               placeholder={dosLogoThumbnail}
@@ -113,6 +114,7 @@ class Main extends Component {
               type="ghost"
               size="large"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://www.indiedb.com/games/depths-of-sanity/downloads/new-demo2"
             >
               Download Demo
@@ -121,6 +123,7 @@ class Main extends Component {
               type="ghost"
               size="large"
               target="_blank"
+              rel="noopener noreferrer"
               href="https://store.steampowered.com/app/848080/Depths_of_Sanity/"
             >
               Steam Page
@@ -230,11 +233,7 @@ class Main extends Component {
             </MainSection>
             <MainSection alt topDivider bottomDivider>
               <h2 className="u-accessibleText">Screenshot Gallery</h2>
-              <ImageGallery
-                images={screenshotGallery}
-                showModal
-                showTitleModal
-              />
+              <ImageGallery images={screenshotGallery} showModal />
             </MainSection>
             {/*
             Hiding the info about other games for now
@@ -249,6 +248,7 @@ class Main extends Component {
             </MainSection>
             */}
             <ContactForm />
+            <ContactInfo />
             <Footer images={footerImages} />
           </main>
         </div>

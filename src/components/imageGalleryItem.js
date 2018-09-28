@@ -26,6 +26,12 @@ class ImageGalleryItem extends Component {
 
     const ItemEl = image.href ? "a" : "button";
     const thumbnail = image.thumbnail ? image.thumbnail : image.src;
+    const imgAlt = image.title ? image.title : "Screenshot";
+    const thumbAlt = showModal
+      ? "Enlarge Screenshot"
+      : showTitleThumb
+        ? imgAlt
+        : "";
 
     return (
       <Fragment>
@@ -37,28 +43,28 @@ class ImageGalleryItem extends Component {
           <img
             className="ImageGalleryItem-thumbnail"
             src={thumbnail}
-            alt={!showTitleThumb ? image.title : ""}
+            alt={thumbAlt}
           />
           {showTitleThumb && (
             <p className="ImageGalleryItem-title">{image.title}</p>
           )}
         </ItemEl>
         {showModal && (
-          <Modal isOpen={this.state.openModal} handleClose={this.close} type="image">
+          <Modal
+            isOpen={this.state.openModal}
+            handleClose={this.close}
+            type="image"
+          >
             <Image
               className="ImageGalleryItem-modal-image"
               src={image.src}
               placeholder={thumbnail}
-              alt={!showTitleModal ? image.title : ""}
+              alt={!showTitleModal ? imgAlt : ""}
             />
             {(image.description || (image.showTitleModal && image.title)) && (
               <div className="Modal-inner-description">
-                {showTitleModal && (
-                  <h3>{image.title}</h3>
-                )}
-                {image.description && (
-                  <p>{image.description}</p>
-                )}
+                {showTitleModal && <h3>{image.title}</h3>}
+                {image.description && <p>{image.description}</p>}
               </div>
             )}
           </Modal>
