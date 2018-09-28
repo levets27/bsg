@@ -1,8 +1,8 @@
 {
-  "main.css": "static/css/main.9027c92d.css",
-  "main.css.map": "static/css/main.9027c92d.css.map",
-  "main.js": "static/js/main.6d6e8a07.js",
-  "main.js.map": "static/js/main.6d6e8a07.js.map",
+  "main.css": "static/css/main.23199c6f.css",
+  "main.css.map": "static/css/main.23199c6f.css.map",
+  "main.js": "static/js/main.8637079c.js",
+  "main.js.map": "static/js/main.8637079c.js.map",
   "static/media/01.jpg": "static/media/01.7bf025fd.jpg",
   "static/media/02.jpg": "static/media/02.d5b41f73.jpg",
   "static/media/03.jpg": "static/media/03.e480d14d.jpg",
@@ -17,17 +17,12 @@
   "static/media/12.png": "static/media/12.5607d32a.png",
   "static/media/13.png": "static/media/13.dbbf85d6.png",
   "static/media/14.png": "static/media/14.c0054086.png",
-  "static/media/ballistick.png": "static/media/ballistick.1babd552.png",
-  "static/media/bbb.png": "static/media/bbb.11fb797a.png",
   "static/media/dos-hero.png": "static/media/dos-hero.fc3f5bad.png",
   "static/media/dos-previewImage.png": "static/media/dos-previewImage.31c25b0b.png",
   "static/media/dos-tentacles-sm.png": "static/media/dos-tentacles-sm.d20e8fbe.png",
   "static/media/dos-tentacles.png": "static/media/dos-tentacles.f3430056.png",
-  "static/media/facebook.svg": "static/media/facebook.8f10aced.svg",
-  "static/media/jqa.png": "static/media/jqa.ce338663.png",
   "static/media/page-background.png": "static/media/page-background.5049755a.png",
   "static/media/page-foreground.png": "static/media/page-foreground.632304a4.png",
   "static/media/play-btn.svg": "static/media/play-btn.7cdf700f.svg",
-  "static/media/sonar.gif": "static/media/sonar.464f3388.gif",
-  "static/media/twitter.svg": "static/media/twitter.a7a925c7.svg"
+  "static/media/sonar.gif": "static/media/sonar.464f3388.gif"
 }
