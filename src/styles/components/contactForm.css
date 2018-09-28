@@ -9,7 +9,8 @@
     margin: 0.5rem auto;
     padding: 0.5rem; }
   .ContactForm .Button {
-    width: 250px; }
+    width: 250px;
+    margin-top: 0.5rem; }
   .ContactForm-message {
     padding: 0.5rem;
     border: 2px solid;
