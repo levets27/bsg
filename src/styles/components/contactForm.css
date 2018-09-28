@@ -1,7 +1,7 @@
 .ContactForm {
   width: 100%;
   max-width: 480px;
-  padding: 0.5rem;
+  padding: 1.5rem 0.5rem;
   margin: auto;
   text-align: center; }
   .ContactForm input {
