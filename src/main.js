@@ -42,8 +42,6 @@ class Main extends Component {
   // We're checking the height of the window, and the offset of the MainContent container
   constructor(props) {
     super(props);
-    // This lets us target the MainContent container, so we can calculate where it is relative to its parent container
-    this.mainContent = React.createRef();
     // Storing these values in state so we can save and update them as necessary
     // When the top of the container is halfway up the screen, we're going to show the Back to Top button
     // We can add `width: window.innerWidth` if we want both at some point, but we only need height right now
@@ -58,24 +56,24 @@ class Main extends Component {
     this.updateWindowDimensions = this.updateWindowDimensions.bind(this);
   }
   // Adding the resize event so we can adjust the dimensions if necessary
-  componentDidMount() {
+  componentDidMount = () => {
     window.addEventListener("resize", this.updateWindowDimensions);
-  }
+    // Add listener for scroll, to trigger show/hide of the back to top button
+    window.addEventListener("scroll", this.handleScroll);
+  };
   // Remove when the component unmounts (when we change pages)
-  componentWillUnmount() {
+  componentWillUnmount = () => {
     window.removeEventListener("resize", this.updateWindowDimensions);
-  }
+  };
   // Function that actually updates the height
   // Like with state, we can add `width: window.innerWidth` if we want that too
-  updateWindowDimensions() {
+  updateWindowDimensions = () => {
     this.setState({ height: window.innerHeight });
-  }
+  };
   // This is where we make the comparison and update state if we actually want to show the Back to Top button
   // Throttling so we're not calling it on every single scroll event, and firing 1000s of calls to this function
   handleScroll = throttle(() => {
-    const shouldShow =
-      this.mainContent.current.getBoundingClientRect().top <
-      this.state.height / 2;
+    const shouldShow = window.scrollY > this.state.height / 2;
     if (this.state.showBackToTop !== shouldShow) {
       this.setState({ showBackToTop: shouldShow });
     }
@@ -99,7 +97,7 @@ class Main extends Component {
   render() {
     return (
       <Fragment>
-        <div className="Main" onScroll={this.handleScroll}>
+        <div className="Main">
           <Hero imageSrc={dosHero} placeholder={dosHeroThumbnail} fullscreen>
             <h1 className="u-accessibleText">Depths of Sanity</h1>
             <Image
@@ -129,7 +127,7 @@ class Main extends Component {
               Steam Page
             </Button>
           </Hero>
-          <main className="Main-content" ref={this.mainContent}>
+          <main className="Main-content">
             <Header />
             <MainSection id="trailer" fadeBg bottomDivider>
               <Video
@@ -252,7 +250,10 @@ class Main extends Component {
             <Footer images={footerImages} />
           </main>
         </div>
-        <BackToTop visible={this.state.showBackToTop} />
+        <BackToTop
+          visible={this.state.showBackToTop}
+          target={document.querySelector(".Main")}
+        />
       </Fragment>
     );
   }

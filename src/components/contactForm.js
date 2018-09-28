@@ -38,7 +38,7 @@ const MailChimpForm = ({ status, message, onValidated }) => {
         />
       )}
       <div className="ContactForm-input">
-        <label for="name">Name</label>
+        <label htmlFor="name">Name</label>
         <input
           id="name"
           ref={node => (name = node)}
@@ -47,7 +47,7 @@ const MailChimpForm = ({ status, message, onValidated }) => {
         />
       </div>
       <div className="ContactForm-input">
-        <label for="email">Email</label>
+        <label htmlFor="email">Email</label>
         <input
           id="email"
           ref={node => (email = node)}

@@ -5,7 +5,7 @@
 .BackToTop {
   // Positioning
   &-wrap {
-    position: absolute;
+    position: fixed;
     bottom: 40px;
     right: 30px;
     // Move positioning for larger screen sizes

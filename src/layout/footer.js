@@ -1,6 +1,5 @@
 // Framework Imports
 import React from "react";
-import { Follow } from "react-twitter-widgets";
 // Component Styles
 import "styles/layout/footer.css";
 // Component Imports

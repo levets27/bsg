@@ -1,8 +1,8 @@
 .Hero {
-  position: relative;
-  transform-origin: 0 0;
-  transform: translateZ(-1px) scale(2);
-  z-index: -1; }
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100vw; }
   .Hero-content {
     position: absolute;
     z-index: 3;
