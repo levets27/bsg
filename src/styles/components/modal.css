@@ -1,15 +1,17 @@
 .Modal {
-  background: rgba(0, 0, 0, 0.8);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
-  display: flex; }
+  display: flex;
+  z-index: 2;
+  animation: fadeBg 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards; }
   @media screen and (min-width: 650px) {
     .Modal {
       padding: 2rem; } }
   .Modal-inner {
+    animation: blowUpModal 0.3s cubic-bezier(0.165, 0.84, 0.44, 1) forwards;
     position: relative;
     margin: auto; }
   .Modal-close {
@@ -43,3 +45,15 @@
     max-width: 768px;
     border-radius: 1rem;
     padding: 1rem; }
+
+@keyframes fadeBg {
+  0% {
+    background: 0; }
+  100% {
+    background: rgba(0, 0, 0, 0.8); } }
+
+@keyframes blowUpModal {
+  0% {
+    transform: scale(0); }
+  100% {
+    transform: scale(1); } }

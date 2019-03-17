@@ -10,10 +10,6 @@ import screenshot07 from "images/screenshots/dos/07.jpg";
 import screenshot08 from "images/screenshots/dos/08.jpg";
 import screenshot09 from "images/screenshots/dos/09.jpg";
 import screenshot10 from "images/screenshots/dos/10.jpg";
-import screenshot11 from "images/screenshots/dos/11.jpg";
-import screenshot12 from "images/screenshots/dos/12.png";
-import screenshot13 from "images/screenshots/dos/13.png";
-import screenshot14 from "images/screenshots/dos/14.png";
 
 // Gallery also supports "title" and "description" attributes - text strings only. Example:
 /*
@@ -64,22 +60,6 @@ const screenshotGallery = [
   {
     thumbnail: screenshot10,
     src: screenshot10
-  },
-  {
-    thumbnail: screenshot11,
-    src: screenshot11
-  },
-  {
-    thumbnail: screenshot12,
-    src: screenshot12
-  },
-  {
-    thumbnail: screenshot13,
-    src: screenshot13
-  },
-  {
-    thumbnail: screenshot14,
-    src: screenshot14
   }
 ];
 

@@ -8,10 +8,10 @@ const NavBar = props => {
     <nav className="NavBar">
       <ul className="NavBar-list">
         <li className="NavBar-item">
-          <a className="NavBar-item-link">DoS Trailer</a>
+          <button type="button" className="NavBar-item-link">DoS Trailer</button>
         </li>
         <li className="NavBar-item">
-          <a className="NavBar-item-link">More Games</a>
+          <button type="button" className="NavBar-item-link">More Games</button>
           <ul className="NavBar-dropdown">
             <li className="NavBar-dropdown-item">Ball Bounce Blast</li>
             <li className="NavBar-dropdown-item">Ballistick</li>
@@ -19,7 +19,7 @@ const NavBar = props => {
           </ul>
         </li>
         <li className="NavBar-item">
-          <a className="NavBar-item-link">Meet The Team</a>
+          <button type="button" className="NavBar-item-link">Meet The Team</button>
         </li>
       </ul>
     </nav>

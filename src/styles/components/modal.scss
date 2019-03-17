@@ -4,17 +4,19 @@
 // Component styles below
 .Modal {
   // Global modal styles
-  background: rgba(0, 0, 0, .8);
   position: fixed;
   left: 0;
   right: 0;
   top: 0;
   bottom: 0;
   display: flex;
+  z-index: 2;
+  animation: fadeBg .3s cubic-bezier(.165, .84, .44, 1) forwards;
   @media screen and (min-width: $bp--1000) {
     padding: $spacing--2000;
   }
   &-inner {
+    animation: blowUpModal .3s cubic-bezier(.165, .84, .44, 1) forwards;
     position: relative;
     margin: auto;
   }
@@ -68,3 +70,58 @@
     }
   }
 }
+
+@keyframes fadeBg {
+  0% {
+    background: 0;
+  }
+  100% {
+    background: rgba(0, 0, 0, .8);
+  }
+}
+
+@keyframes blowUpModal {
+  0% {
+    transform:scale(0);
+  }
+  100% {
+    transform:scale(1);
+  }
+}
+
+// @todo - add exit effect
+// 
+// @keyframes blowUpModalTwo {
+//   0% {
+//     transform:scale(1);
+//     opacity:1;
+//   }
+//   100% {
+//     transform:scale(0);
+//     opacity:0;
+//   }
+// }
+// @keyframes blowUpContent {
+//   0% {
+//     transform:scale(1);
+//     opacity:1;
+//   }
+//   99.9% {
+//     transform:scale(2);
+//     opacity:0;
+//   }
+//   100% {
+//     transform:scale(0);
+//   }
+// }
+
+// @keyframes blowUpContentTwo {
+//   0% {
+//     transform:scale(2);
+//     opacity:0;
+//   }
+//   100% {
+//     transform:scale(1);
+//     opacity:1;
+//   }
+// }

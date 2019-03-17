@@ -65,7 +65,7 @@ const Footer = props => {
             </svg>
           </a>
           <a
-            href=""
+            href="https://www.youtube.com/channel/UCuyg6cw4xOHIUR1hoCPB6sg"
             className="Footer-content-links-youtube"
             target="_blank"
             rel="noopener noreferrer"
